@@ -5,6 +5,22 @@ title: Branding
 {% block content %}
 	
 	{{ header.block() }}
+	<div class="more-services">
+		<div class="inner">
+			<div class="more-services__content">
+				<div class="more-services__left">
+					more services
+				</div>
+				<div class="more-services__right">
+					<a href="#" class="btn-text btn-text_yellow">VIEW MORE 
+						<svg class="icon icon-arrow-right ">
+							<use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	{% include 'partials/components/_footer.html' %}
 
 {% endblock %}
