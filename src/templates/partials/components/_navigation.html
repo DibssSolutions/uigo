@@ -30,8 +30,11 @@
 {% macro themeNav(props) %}
     <div class="navigation">
         <div class="navigation__inner inner">
-            <div class="navigation__out">
-                <div class="navigation__wrap">
+            <div class="navigation__out js-navigation-out">
+                <div class="navigation__current js-navigation-current">
+                    <span class="js-navigation-current-text"></span>
+                </div>
+                <div class="navigation__wrap js-navigation-wrap">
 
                     <div class="navigation__logo theme-icon">
                         {{ mixins.icon('navbar-services-branding') }}
