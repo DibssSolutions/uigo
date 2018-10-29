@@ -1,3 +1,4 @@
+/* eslint-disable */
 import {TimelineMax} from 'gsap';
 export default props => {
   new TimelineMax()
