@@ -1,199 +1,55 @@
 .header
 	position: absolute
-	z-index: 100
 	top: 0
 	left: 0
 	right: 0
-	color: $white
-	&.is-fixed
-		position: fixed
-		.header
-			&__inner
-				background-color: $white
-				box-shadow: inset 0 -1px 0 0 rgba(204, 204, 204, 0.5)
-				&:before
-					position: absolute
-					content: ""
-					top: 0
-					left: 50%
-					bottom: 0
-					transform: translateX(-50%)
-					width: 100vw 
-					background-color: $white
-					box-shadow: inset 0 -1px 0 0 rgba(204, 204, 204, 0.5)
-	&.is-fixed,
-	&.is-active
-		color: $dark
-		.header
-			&__btn
-				color: $dark
-				background: $green
-				box-shadow: none
-				+hover
-					background: darken($green, 15%)
-			&__btn-nav
-				span
-					&:before,
-					&:after,
-					i
-						border-color: $dark
-	&.is-active
-		.header
-			&__btn-nav
-				span
-					&:before
-						transform: translate3d(4px, -1px, 0) rotate(45deg)
-					&:after
-						transform: translate3d(4px, 1px, 0) rotate(-45deg)
-					i
-						opacity: 0
-						transform: scale(0.5)
-		.nav
-			+sm
-				transform: translate3d(100%,0,0)
-	&__inner
+	padding-top: 47px
+	+sm 
+		padding-top: 20px
+	&__nav
 		position: relative
-		padding-top: 30px
-		padding-bottom: 30px
-		+sm
-			padding-top: 12px
-			padding-bottom: 12px
-	&__btn
-		position: relative
-		z-index: 2
+		z-index: 1000
 		float: right
-		padding: 10px 27px
-		border: 1px solid $green
-		border-radius: 29px
-
-		color: $green
-		background: transparent
-		// box-shadow: 0 8px 27px 0 rgba(0, 0, 0, 0.26)
-
-		font-family: $montserrat
-		+f(13, 16px, 0.5)
-		text-transform: uppercase
-		// transition: color 0.15s ease, background 0.15s ease, box-shadow 0.15s ease
-		+sm
-			padding: 11px 14px 10px
-			+f(10, 13px, 0.4)
-		+hover
-			color: $dark
-			background: $green
-	&__btn-nav
-		position: relative
-		z-index: 2
-		float: left
-		margin-left: -15px
-		width: 51px
-		height: 36px
+		margin-right: -7px
+		width: 31px
+		height: 31px
 		background: none
-		display: none
-		+sm
-			display: block
-		span
+		&:before,
+		&:after
+			content: ''
 			position: absolute
-			top: 11px
-			left: 15px
-			right: 15px
-			bottom: 11px
-			&:before,
-			&:after,
-			i
-				position: absolute
-				left: 0
-				border-top: 2px solid $white
-				width: 100%
-			&:before,
-			&:after
-				content: ''
-				transition: transform 0.2s ease-in-out
+			right: 7px
+			width: 17px
+			height: 3px
+			background-color: $dark
+			transform-origin: right center
+			transition: transform 0.25s, background-color .25s
+			.header_mod &
+				background-color: $yellow 
+		&.is-active
 			&:before
-				top: 0
-				transform-origin: left top
+				transform: translate3d(0px,-3px,0) rotate(-45deg) scaleX(1.4)
+				background-color: $dark
 			&:after
-				bottom: 0
-				transform-origin: left bottom
-			i
-				top: 50%
-				margin-top: -1px
-				transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out
+				transform: translate3d(0px,2px,0) rotate(45deg) scaleX(1.4)
+				background-color: $dark
+		&:before
+			top: 8px
+		&:after
+			bottom: 8px
 
 .logo
 	position: relative
-	z-index: 2
-	float: left
-	padding: 5px 0
-	color: inherit
-	font-size: 0
-	+sm
-		padding: 8px 0
-	.icon
-		color: inherit
-		fill: $green
-		font-size: 28px
-		+sm
-			font-size: 20px
-
-.nav
-	float: right
-	+sm
-		position: absolute
-		z-index: 1
-		top: 0
-		right: 100%
-		padding: 60px 20px
-		width: 100vw
-		height: 100vh
-		background: $white
-		+gpu
-		transition: transform 0.4s ease-in-out
-	&__item
-		display: inline-block
-		vertical-align: middle
-		padding-right: 62px
-		&.is-active
-			font-weight: 700 
-		+md
-			padding-right: 40px
-		+sm
-			display: block
-			padding: 0
-	&__link
-		position: relative
-		display: inline-block
-		vertical-align: top
-		padding: 11px 0
-
-		color: inherit
-		opacity: 0.9
-
-		font-family: $montserrat
-		+f(13, 16px, 0.5)
-		text-transform: uppercase
-		+sm
-			display: block
-			padding: 24px 0 23px
-			border-bottom: 1px solid rgba(204, 204, 204, 0.5)
-			color: $dark
-			+f(10, 13px, 0.4)
-		&.is-active
-			&:before
-				opacity: 1
-				+gpu
-		+hover
-			&:before
-				opacity: 1
-				+gpu
-		&:before
-			content: ''
-			position: absolute
-			left: 0
-			right: 0
-			bottom: 1px
-			border-top: 2px solid $green
-			opacity: 0
-			transform: translate3d(0,5px,0)
-			transition: opacity 0.17s ease-in-out, transform 0.17s ease-in-out
-			+sm 
-				bottom: -1px
+	z-index: 1000
+	display: inline-block
+	vertical-align: top
+	font-size: 31px
+	&__icon
+		display: block
+		fill: $dark
+		transition: fill .25s
+		.header_mod &
+			fill: $white 
+		.header.is-open &
+			fill: $dark
+			

@@ -1,7 +1,7 @@
-import { TOUCH } from './_utils';
-import { BODY } from './_constants';
-import './_components';
-import svg4everybody from 'svg4everybody';
+import {DOC, BODY, NO_TOUCH} from './_constants';
+import {isTouch} from './_utils';
 
-svg4everybody();
-if (!TOUCH()) BODY.addClass('no-touch');
+DOC.ready(() => {
+  if (!isTouch()) BODY.addClass(NO_TOUCH);
+  require('./components');
+});
