@@ -11,3 +11,5 @@ PageList:
   ready: 100
 - file: branding.html
   ready: 100
+- file: development.html
+  ready: 100

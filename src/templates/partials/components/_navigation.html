@@ -1,25 +1,57 @@
 {% import "partials/_mixins.html" as mixins %}
 {% macro block(props) %}
-<!-- begin navigation -->
-<div class="navigation">
-	<div class="navigation__inner inner">
-		<div class="navigation__out js-navigation-out">
-			<div class="navigation__current js-navigation-current"><span class="js-navigation-current-text"></span>{{ mixins.icon('arrow-right') }}</div>
-			<div class="navigation__wrap js-navigation-wrap">
-				{% if props.btnLeft %}
-				<a href="#" class="navigation__btn">{{ mixins.icon('arrow-left') }}{{ props.btnLeftText or 'back'}}</a>
-				{% endif %}
-				<ul class="navigation__list">
-					{% for text in ['Latest','Interfaces','Software','Branding'] %}
-						<li class="navigation__item{% if props.activeClass == loop.index %} is-active{% endif %}"><a class="navigation__link" href="#">{{ text }}</a></li>
-					{% endfor %}
-				</ul>
-				{% if props.btnRight %}
-				<a href="#" class="navigation__btn">{{ props.btnRightText or 'next'}}{{ mixins.icon('arrow-right') }}</a>
-				{% endif %}
-			</div>
-		</div>
-	</div>
-</div>
-<!-- end navigation -->
+    <!-- begin navigation -->
+    <div class="navigation">
+        <div class="navigation__inner inner">
+            <div class="navigation__out js-navigation-out">
+                <div class="navigation__current js-navigation-current">
+                    <span class="js-navigation-current-text"></span>{{ mixins.icon('arrow-right') }}</div>
+                <div class="navigation__wrap js-navigation-wrap">
+                    {% if props.btnLeft %}
+                        <a href="#" class="navigation__btn">{{ mixins.icon('arrow-left') }}{{ props.btnLeftText or 'back'}}</a>
+                    {% endif %}
+                    <ul class="navigation__list">
+                        {% for text in['Latest', 'Interfaces', 'Software', 'Branding'] %}
+                            <li class="navigation__item{% if props.activeClass == loop.index %} is-active{% endif %}">
+                                <a class="navigation__link" href="#">{{ text }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                    {% if props.btnRight %}
+                        <a href="#" class="navigation__btn">{{ props.btnRightText or 'next'}}{{ mixins.icon('arrow-right') }}</a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end navigation -->
+{% endmacro %}
+
+{% macro themeNav(props) %}
+    <div class="navigation">
+        <div class="navigation__inner inner">
+            <div class="navigation__out">
+                <div class="navigation__wrap">
+
+                    <div class="navigation__logo theme-icon">
+                        {{ mixins.icon('navbar-services-branding') }}
+                        <span class="navigation__title">
+                            {{props.title}}
+                        </span>
+                    </div>
+
+                    <ul class="navigation__list">
+                        {% for text in['What', 'How', 'Who'] %}
+                            <li class="navigation__item{% if loop.index == 1 %} is-active{% endif %}">
+                                <a class="navigation__link theme-pseudo" href="#{{text}}">{{ text }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+
+                    <button class="btn btn_black btn_no-border btn_middle theme-bg">{{props.btnText or 'Contact Us'}}</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
 {% endmacro %}
