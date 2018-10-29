@@ -1,28 +1,49 @@
 .footer
-	padding: 20px 0
+	padding: 54px 0
 	color: $white 
-	background-color: $dark
-	+sm
-		padding: 24px 0 13px
-		text-align: center
-	&__copy,
-	&__logo
+	background-image: linear-gradient(229deg, #36424D 3%, #2B333C 100%)
+	border-bottom: 5px solid $black 
+	&__wrap
+		width: 100%
+		display: table
 		+sm
-			float: none
-	&__copy
-		float: left
+			display: block
+	&__contacts,
+	&__button
+		vertical-align: middle
+		display: table-cell
 		+sm
-			margin-top: 10px
-	&__logo
-		float: right
+			display: block
+	&__button
+		text-align: right
 		+sm
-			vertical-align: top
-			display: inline-block
-
-
-.copy
-	opacity: 0.6
-	font-size: 11px
-	line-height: 1.73
-	font-weight: 700 
-	+font-smoothing
+			margin-top: 20px
+			text-align: center
+	&__info
+		vertical-align: top
+		display: inline-block
+		+sm
+			display: block
+			padding-bottom: 22px
+		&:not(:last-child)
+			margin-right: 50px
+			+sm
+				margin: 0
+	&__icon
+		margin-bottom: 7px
+	&__subtitle
+		font-family: $montserrat
+		+f(16px, 700, 1.4)
+		letter-spacing: 0.46px
+	&__meta
+		+f(15px, 400, 20px)
+		letter-spacing: -0.02px
+		a 
+			color: inherit
+			transition: color 0.25s
+			+hover
+				color: $yellow
+	&__subnav
+		margin: 69px -13px 0
+		+md 
+			margin-top: 13px

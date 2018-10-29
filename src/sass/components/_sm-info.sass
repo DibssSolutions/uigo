@@ -1,64 +1,81 @@
 .sm-info
-	color: $white
-	background: $dark
-	&__inner
-		padding-top: 90px
-		padding-bottom: 89px
-		+sm 
-			padding-top: 25px
-			padding-bottom: 25px
-	&__row
-		margin: 0 -115px
-		+clr
-		+lg
-			margin: 0 -50px
-		+md 
-			margin: 0 -30px
-		+sm 
-			margin: 0
-	&__col
-		float: left
-		padding: 30px 115px
+	display: flex
+	flex-direction: row
+	align-items: center
+	padding: 40px 0
+	min-height: 340px
+	+md 
+		display: block
+	&_right
+		.sm-info
+			&__figures
+				order: 1
+			&__content
+				padding-left: 0
+				padding-right: 42px
+				+md 
+					padding-right: 0
+	&__figures,
+	&__content
+		flex-grow: 1
 		width: 50%
-		+lg 
-			padding: 30px 50px
 		+md 
-			padding: 30px
-		+sm 
-			padding: 15px 0
 			width: 100%
-	&__header
-		margin-bottom: 30px
-		+clr
+	&__content
+		padding-left: 40px
+		+md 
+			padding-top: 20px
+			padding-left: 0
+	&__row 
+		margin: 0 -20px
+		font-size: 0
+		+md 
+			text-align: center
 		+sm 
-			margin-bottom: 20px
-	&__icon
-		float: left
+			margin: 0 -10px
+	&__col
+		display: inline-block
+		vertical-align: top
+		padding: 10px 20px
+		width: 33.33%
+		max-width: 193px
 		+sm 
-			float: none
-			padding-bottom: 20px
-		&_home-agency
-			padding-right: 21px
-			margin-left: -12px
-			+sm 
-				padding-right: 0
-				margin: 0
-		&_home-outsourcing
-			padding-right: 27px
-			+sm 
-				padding-right: 0
-		.icon
-			font-size: 70px
-			+sm 
-				font-size: 35px
+			padding: 10px
+	&__img
+		padding-bottom: 100%
+		+cover
 	&__title
-		display: table-cell
-		width: 100%
-		max-width: 300px
-		+sm 
-			display: block
-			max-width: 160px
+		font-family: $montserrat
+		+f(16px, 600, 21px)
+		letter-spacing: 0.89px
 	&__description
-		br
-			+sm
-				display: none
+		padding-top: 12px
+		opacity: 0.7
+		font-family: $lato
+		+f(14px, 400, 20px)
+	&__images
+		margin: 0 -30px
+		font-size: 0
+		+md 
+			margin-bottom: 20px
+			text-align: center
+	&__image
+		display: inline-block
+		vertical-align: bottom
+		padding: 10px 30px
+		width: 50%
+		+sm 
+			padding: 0 30px
+			width: 100%
+		&:not(:last-child)
+			+sm 
+				margin-bottom: 30px
+		&_sm
+			max-width: 257px
+			max-height: 251px
+		&_md 
+			max-width: 311px
+			max-height: 264px
+		img 
+			max-width: 100%
+			max-height: 100%

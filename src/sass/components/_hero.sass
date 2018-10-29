@@ -1,28 +1,31 @@
 .hero
 	position: relative
-	background-image: url(../img/hero-home-design@2x.jpg)
-	+cover
-	+r(320)
-		background-image: url(../img/hero-woohoo.jpg)
-		background-position: center top
+	padding: 150px 0 160px
+	overflow: hidden
+	color: $white 
+	text-align: center
+	+sm
+		padding: 120px 0
+	&:before
+		position: absolute
+		content: ""
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		opacity: 0.96
+		background-image: linear-gradient(65deg, rgba(17,24,31,0.90) 0%, rgba(32,54,75,0.90) 83%)
+	&__bg
+		position: absolute
+		top: -80px
+		left: 0
+		right: 0
+		bottom: -80px
+		z-index: 1
+		opacity: 0.15
+		background-size: cover
+		background-position: 50% 50%
+		background-repeat: no-repeat 
 	&__inner
-		padding-top: 310px
-		padding-bottom: 473px
-		color: $white
-		+xl
-			padding-top: 240px
-			padding-bottom: 350px
-		+md
-			padding-top: 143px
-			padding-bottom: 140px
-		+sm
-			padding-top: 143px
-			padding-bottom: 106px
-	&__content
-		max-width: 470px
-		+sm 
-			max-width: 200px
-	&__title
-		margin-bottom: 46px
-		+sm 
-			margin-bottom: 21px
+		position: relative
+		z-index: 2

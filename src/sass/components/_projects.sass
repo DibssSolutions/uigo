@@ -1,0 +1,207 @@
+.projects
+	&_gray
+		background-color: rgba($bgGray, 0.1)
+	&__out
+		padding: 102px 0 117px
+		+sm
+			padding: 60px 0
+	&__head
+		padding: 90px 0
+		width: 100%
+		display: table
+		+sm
+			padding: 40px 0
+			display: block
+	&__titles,
+	&__all
+		vertical-align: middle
+		display: table-cell
+		+sm
+			display: block
+	&__all
+		text-align: right
+		+sm
+			margin-top: 20px
+			text-align: left
+	&__label
+		margin-bottom: -14px
+		font-family: $montserrat
+		font-weight: 200 
+		font-size: 28px
+		color: $limedSpruce
+		text-transform: uppercase
+		letter-spacing: 4.67px
+		line-height: 0.9
+		+sm
+			margin-bottom: -7px
+			font-size: 12px
+			line-height: 1
+			letter-spacing: 2.5px
+	&__wrap
+		padding-top: 28px
+		+sm
+			padding-top: 0
+	&__row
+		margin: -28px 0
+		+sm
+			margin: 0
+		&:not(:first-child)
+			+sm
+				margin-top: 30px
+			&:last-child
+				margin-bottom: -40px
+				+sm
+					margin-bottom: 0
+	&__field
+		&:not(:first-child)
+			margin-top: 80px
+			+sm
+				margin-top: 30px
+.project
+	margin: 0 -19px
+	width: calc(100% + 38px)
+	table-layout: fixed
+	display: table
+	+sm
+		display: flex
+		flex-wrap: wrap
+	&__img-wrap
+		position: relative
+		z-index: 1
+		padding: 0 19px
+		vertical-align: top
+		display: table-cell
+		+sm
+			order: 2
+			width: 100%
+			display: block
+	&__overlay
+		position: absolute
+		z-index: -1
+		top: 49px
+		right: 13.5%
+		bottom: -49px
+		width: 109%
+		background-color: $gallery 
+		+md
+			top: 29px
+			bottom: -29px
+		+sm
+			display: none
+			
+		&_turquoise
+			background-color: $azure 
+		&_yellow
+			background-color: $yellow
+		&_pink
+			background-color: $pink
+			
+		&_top-right
+			top: -40px
+			left: 13.5%
+			right: auto
+			bottom: 40px
+			+md
+				top: -20px
+				bottom: 40px
+		&[data-overlay-direction="top-left"]
+			top: -27px
+			right: 52px
+			bottom: 27px
+		&[data-overlay-direction="bottom-left"]
+			top: 25px
+			right: 182px
+			bottom: -25px
+		&[data-overlay-direction="top-right"]
+			top: -25px
+			left: 44px
+			right: auto
+			bottom: 22px
+		&[data-overlay-direction="bottom-right"]
+			top: 19px
+			left: 120px
+			right: auto
+			bottom: -19px
+	&__img
+		height: 0
+		padding-bottom: 65.38%
+		background-repeat: no-repeat
+		background-size: cover
+	&__wrap
+		padding: 28px 19px
+		text-align: center
+		vertical-align: middle
+		display: table-cell
+		+sm
+			margin-bottom: 20px
+			padding: 0 19px
+			width: 100%
+			order: 1
+			text-align: left
+			display: block
+		.projects__row:first-child &
+			padding-bottom: 9%
+			+sm
+				padding-bottom: 0
+		.projects__row:last-child &
+			padding-top: 5% 
+			+sm
+				padding-bottom: 0
+		.projects__row:nth-child(odd) &
+			padding-bottom: 5% 
+			+sm
+				padding-bottom: 0
+		.projects__row:nth-child(even) &
+			padding-top: 5% 
+			+sm
+				padding-bottom: 0
+	&__name
+		position: relative
+		padding-left: 21px
+		font-family: $arbutus
+		font-size: 30px
+		color: #3F566E
+		letter-spacing: 0
+		line-height: 1.2
+		transition: color .3s
+		vertical-align: top
+		display: inline-block
+		+md
+			font-size: 24px
+		+sm
+			font-size: 18px
+		&:hover
+			color: $yellow 
+		.icon-arrow-right
+			margin-left: 8px
+			font-size: 9px
+			vertical-align: middle
+	&__line
+		position: absolute
+		top: 0
+		left: 0
+		bottom: 0
+		width: 4px
+		background-color: $yellow
+		&_pink
+			background-color: $pink 
+		&_turquoise
+			background-color: $azure 
+	&__content
+		max-width: 380px
+		width: 100%
+		text-align: left
+		vertical-align: top
+		display: inline-block
+	&__text
+		font-family: $lato
+		font-size: 14px
+		color: rgba($dark, 0.7)
+		letter-spacing: 0
+		line-height: 1.4
+	&__footer
+		margin-top: 12px
+	&__out
+		padding-left: 21px
+		&:not(:first-child)
+			margin-top: 12px 
