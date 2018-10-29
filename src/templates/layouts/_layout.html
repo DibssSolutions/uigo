@@ -16,7 +16,7 @@
     <link rel="stylesheet" media="all" href="css/style.css">
     {# {% include "../partials/_media-tags.html" %} #}
   </head>
-  <body>
+  <body {% if class %}class="{{ class }}"{% endif %}>
 
     <!-- BEGIN content -->
     <div class="out">

@@ -1,9 +1,16 @@
---- title: Branding
+---
+title: Branding
+class: is-pink
+---
+
 {% extends "layouts/_layout.html" %}
 
 {% block content %}
 	
 	{{ header.block() }}
+
+	{% include 'partials/components/_who.html' %}
+
 	<div class="more-services">
 		<div class="inner">
 			<div class="more-services__content">
@@ -11,7 +18,8 @@
 					more services
 				</div>
 				<div class="more-services__right">
-					<a href="#" class="btn-text btn-text_yellow">VIEW MORE 
+					<div class="servisec-item">e-Commerce</div>
+					<a href="#" class="btn-text btn-text_yellow btn-text_sm">VIEW MORE 
 						<svg class="icon icon-arrow-right ">
 							<use xlink:href="img/sprite.svg#icon-arrow-right"></use>
 						</svg>
