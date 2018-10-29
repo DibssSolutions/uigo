@@ -6,18 +6,22 @@
         align-items: center
         +md
             flex-direction: column
-        +sm
             padding: 0
     &__text
         max-width: 321px
         +md
             text-align: center
+            max-width: none
     &__list
         max-width: 480px
         margin-left: 20px
         +md
             margin-left: 0
             margin-top: 20px
+    &__subtitle
+        text-align: left
+        +md
+            text-align: center
     &__wrap
         display: flex
         flex-wrap: wrap
@@ -25,6 +29,7 @@
     &__item
         padding: 21px 10px
         flex: 0 0 50%
+        max-width: 50%
         +xs
             flex: 0 0 100%
             padding: 10px

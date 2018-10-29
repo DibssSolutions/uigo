@@ -1,0 +1,24 @@
+{% macro build(props) %}
+    <div class="what">
+        <div class="what__inner inner">
+            <h3 class="what__title title">
+                {{props.title}}
+            </h3>
+            <p class="what__descr subtitle">
+                {{props.subtitle}}
+            </p>
+            <div class="what__row">
+                {% for col in props.cols %}
+                    <div class="what__col">
+                        <div class="what__img-wrapper">
+                            <img src="img/{{col.img.src}}" alt="{{col.img.alt}}" class="what__image{% if col.img.modifier %} what__image_{{col.img.modifier}}{% endif %}"/>
+                        </div>
+                        <div class="what__brand">
+                            <img src="img/logos/{{col.brand.src}}" alt="{{col.brand.alt}}"/>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+{% endmacro %}
