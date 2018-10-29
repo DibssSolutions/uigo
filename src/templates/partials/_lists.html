@@ -1,0 +1,39 @@
+{% set lists = [
+	[
+		'Ecommerce',
+		'Social media',
+		'Education',
+		'Travel & Hospitality',
+		'Banking, Finance & Insurance'
+	],
+	[
+		'Entertainment',
+		'Real state & Property',
+		'Utilities',
+		'Lifestyle',
+		'Health & Fitness'
+	],
+	[
+		'Events & Tickets',
+		'Transport',
+		'Food & Drink',
+		'Restaurant',
+		'BOOK'
+	]
+] %}
+<!-- begin lists -->
+<div class="lists">
+	<div class="inner lists__inner">
+		<h2 class="title-lg lists__title">Industries we serve</h2>
+		<div class="lists__content">
+			{% for list in lists %}
+				<ul class="list lists__item">
+					{% for item in list %}
+						<li class="list__item">{{item | safe}}</li>
+					{% endfor %}
+				</ul>
+			{% endfor %}
+		</div>
+	</div>
+</div>
+<!-- end lists -->
