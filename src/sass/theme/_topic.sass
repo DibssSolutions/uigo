@@ -1,0 +1,65 @@
+.topic
+    margin-top: 125px
+    padding: 125px 0 148px
+    &__container
+        display: flex
+        flex-wrap: wrap
+    &__text-wrap
+        flex: 0 0 50%   
+        min-width: 50%
+        padding-right: 100px
+    &__title
+        font-family: $montserrat
+        font-size: 52px
+        font-weight: bold
+        line-height: 1.15
+        letter-spacing: 1.5px
+        color: $pink
+    &__descr
+        margin-bottom: 24px
+        opacity: 0.7
+        font-size: 14px
+        line-height: 1.43
+        color: $dark
+    &__btn
+        .btn
+            font-family: Montserrat
+            font-size: 18px
+            font-weight: normal
+            line-height: 1.11
+            letter-spacing: 0px
+            color: #253240
+            border: none
+            background-color: $pink
+    &__img-wrap
+        flex: 0 0 50%   
+        min-width: 50%
+        height: 370px
+        background-color: $white
+        position: relative
+        +vertical
+        box-shadow: 0 33px 71px 0 rgba(63, 86, 110, 0.1), 0 0 24px 0 rgba(99, 246, 235, 0.04)
+    &__img
+        display: inline-block
+        vertical-align: middle
+    &__overlay
+        position: absolute
+        z-index: -1
+        top: 24px
+        left: 29px
+        // bottom: -24px
+        width: 250%
+        height: 100%
+        background-color: $gallery 
+    .theme-fill
+        fill: $pink
+
+.title
+    font-family: $montserrat
+    font-size: 20px
+    font-weight: 300
+    line-height: 2.3
+    letter-spacing: 0.6px
+    color: $darkTitle
+    text-transform: uppercase
+
