@@ -5,7 +5,7 @@
 
 {% block content %}
 
-    {{ header.block({title: 'SOFTWARE DEVELOPMENT', class: 'header_colored theme-bg'}) }}
+    {{ header.new({title: 'SOFTWARE DEVELOPMENT', class: 'header_colored theme-bg'}) }}
     {{topic.build({
 		label: 'build',
 		title: 'EXCEPTIONAL PRODUCTS ',
@@ -87,5 +87,6 @@
         </div>
     </div>
     {% include 'partials/components/_footer.html' %}
+    
 
 {% endblock %}

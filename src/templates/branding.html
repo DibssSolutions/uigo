@@ -19,8 +19,8 @@
         title: 'WHAT WE DO',
         subtitle: 'We create and innovate to build impactful brand experiences that connect with customers', 
         cols: [
-            
-            { 
+            {   
+                generalModifier: 'cover',
                 img:  
                     { 
                         src: 'what-branding-corefone.png', 
@@ -33,6 +33,7 @@
                     }
             },
             { 
+                generalModifier: 'cover',
                 img:  
                     { 
                         src: 'what-branding-gallito.png', 
@@ -45,6 +46,7 @@
                     }
             },
             {   
+                generalModifier: 'cover',
                 modifier: 'sinae',
                 img:  
                     { 
@@ -68,7 +70,7 @@
     </div>
 
     {% include 'partials/components/_who.html' %}
-    {{idea.got({text: 'branding/identity project or idea?' })}}
+    {{idea.got({ text: 'branding/identity project or idea?' })}}
 
     <div class="more-services">
         <div class="inner">
@@ -88,5 +90,4 @@
         </div>
     </div>
     {% include 'partials/components/_footer.html' %}
-
 {% endblock %}

@@ -9,7 +9,7 @@
             </p>
             <div class="what__row">
                 {% for col in props.cols %}
-                    <div class="card{% if col.modifier %} card_{{col.modifier}}{% endif %}">
+                    <div class="card{% if col.modifier %} card_{{col.modifier}}{% endif %}{% if col.generalModifier %} card_{{col.generalModifier}}{% endif %}">
                         <div class="card__img-wrapper">
                             <img src="img/{{col.img.src}}" alt="{{col.img.alt}}" class="card__image"/>
                         </div>

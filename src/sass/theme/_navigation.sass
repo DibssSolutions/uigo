@@ -18,9 +18,12 @@
             padding: 14px 0
             // text-align: center
     &_theme
+        .navigation__wrap
+            justify-content: flex-start
         .navigation__list
-            justify-self: center
-            margin: 0 -44px 0 0
+            margin: 0 267px 0 auto
+            +md 
+                margin: 0 auto
             +sm 
                 margin: 0
         .navigation__link
