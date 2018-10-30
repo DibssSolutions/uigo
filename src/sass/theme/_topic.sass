@@ -12,6 +12,8 @@
         align-items: center
         +sm 
             flex-direction: column
+            flex-wrap: nowrap
+            align-items: initial
     &__text-wrap
         flex: 0 0 calc(100% - 568px)   
         min-width: calc(100% - 568px)
@@ -84,6 +86,10 @@
             max-width: 100%
             max-height: 100%
             width: 100%
+            display: block
+            // +sm 
+            //     width: 100% !important
+
             
     &__overlay
         position: absolute
