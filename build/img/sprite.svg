@@ -51,6 +51,53 @@
         <path d="M8.124 9.375a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1"/>
         <path d="M17.124 9.375a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1"/>
     </g>
+</symbol><symbol id="icon-icon-ecomm-1" viewBox="0 0 24 24">
+    <title>
+        2C36B74D-5376-41ED-8B0F-DAC49BE7CF59
+    </title>
+    <g fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M12 4.75a.5.5 0 1 1 0 1 .5.5 0 0 1 0-1"/>
+        <path d="M12 .75a4.5 4.5 0 0 1 4.5 4.5c0 1.921-2.688 5.577-3.909 7.138a.75.75 0 0 1-1.182 0C10.187 10.826 7.5 7.171 7.5 5.25A4.5 4.5 0 0 1 12 .75z" stroke-width="1.5"/>
+        <path d="M6.005 9.781a1.5 1.5 0 0 0-1.109.97l-3.441 10.5a1.5 1.5 0 0 0 1.414 2h18.26a1.5 1.5 0 0 0 1.415-2l-3.444-10.5a1.5 1.5 0 0 0-1.117-.971" stroke-width="1.5"/>
+        <path d="M7.499 23.249l1.5-8.999" stroke-width="1.5"/>
+        <path d="M16.499 23.249l-1.5-8.999" stroke-width="1.5"/>
+        <path d="M2.303 18.75h19.421" stroke-width="1.5"/>
+        <path d="M3.749 14.25h5.25" stroke-width="1.5"/>
+        <path d="M14.999 14.25h5.25" stroke-width="1.5"/>
+    </g>
+</symbol><symbol id="icon-icon-ecomm-3" viewBox="0 0 24 25">
+    <title>
+        0C31CF8F-D4E2-420E-ADE4-F5F2121B8280
+    </title>
+    <g transform="translate(0 1)" stroke-width="1.5" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M.749 22.32h21.75"/>
+        <path d="M2.749 18H5.5c.276 0 .5.215.5.48v3.84H2.249v-3.84a.49.49 0 0 1 .5-.48z"/>
+        <path d="M10.249 9.36H13c.276 0 .5.215.5.48v12.48H9.749V9.84a.49.49 0 0 1 .5-.48z"/>
+        <path d="M17.749 13.68H20.5c.276 0 .5.215.5.48v8.16h-3.75v-8.16a.49.49 0 0 1 .499-.48z"/>
+        <path d="M6.883 4.916L2.866 8.77"/>
+        <path d="M14.311 6.072l-4.674-1.2"/>
+        <path d="M20.392 2.772l-3.581 2.69"/>
+        <ellipse cx="8.249" cy="4.321" rx="1.5" ry="1.44"/>
+        <ellipse cx="21.75" cy="2.16" rx="1.5" ry="1.44"/>
+        <ellipse cx="15.75" cy="6.48" rx="1.5" ry="1.44"/>
+        <ellipse cx="2.249" cy="10.081" rx="1.5" ry="1.44"/>
+    </g>
+</symbol><symbol id="icon-icon-ecomm-4" viewBox="0 0 24 24">
+    <title>
+        5DDC6CC2-A71F-4513-B110-007AFE333710
+    </title>
+    <g fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <circle stroke-width="1.5" cx="4.499" cy="7.5" r="2.25"/>
+        <path d="M9.751 23.25a1.5 1.5 0 0 1-1.344-.829l-.67-1.342A1.491 1.491 0 0 0 6.4 20.25H4.5a1.5 1.5 0 0 1-1.5-1.5v-6a1.5 1.5 0 0 1 2.331-1.25l1.116.744a3 3 0 0 0 1.665.5h1.637a1.5 1.5 0 0 1 0 3H8.112A5.964 5.964 0 0 1 6 15.366v1.884h.4a4.478 4.478 0 0 1 4.025 2.487l.671 1.342a1.5 1.5 0 0 1-1.34 2.171h-.005z" stroke-width="1.5"/>
+        <path d="M4.499 20.25h-3" stroke-width="1.5"/>
+        <path d="M9.749 15.75h10.5" stroke-width="1.5"/>
+        <path d="M14.999 15.75v7.5" stroke-width="1.5"/>
+        <path stroke-width="1.5" d="M14.249 12.75h6l2.25-5.25"/>
+        <path d="M14.249 7.125a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1"/>
+        <path d="M11.6 4.848a3.75 3.75 0 0 1 5.3 0" stroke-width="1.5"/>
+        <path d="M9.476 2.727a6.75 6.75 0 0 1 9.546 0" stroke-width="1.5"/>
+        <path d="M3.749 23.25v-3" stroke-width="1.5"/>
+    </g>
 </symbol><symbol id="icon-icon-software-1" viewBox="0 0 25 24">
     <title>
         3500BC5A-E20E-428E-9FAB-18C1E01150FF
@@ -62,6 +109,33 @@
         <path d="M9.575 7.598l-2.934 2.935 2.934 2.934"/>
         <path d="M13.977 7.598l-1.956 5.869"/>
     </g>
+</symbol><symbol id="icon-icon-software-2" viewBox="0 0 28 25">
+    <title>
+        A3FA4FD1-A586-4C87-B03F-39C4D2B6CF66
+    </title>
+    <g stroke-width="1.5" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8.269 6.445c-3.052 2.846-3.804 7.196-.344 10.712m11.688 3.054c1.087.035 2.871.026 5.355-.025"/>
+        <path d="M22.628 23.703c.333-1.242 1.73-2.44 4.192-3.593-1.514-.296-2.765-1.324-3.756-3.083"/>
+        <g>
+            <path d="M.755 20.283c7.474.104 12.562-.207 15.265-.93 4.054-1.087 6.465-5.236 5.385-9.267-1.08-4.032-5.242-6.419-9.297-5.333"/>
+            <path d="M14.791.857c-.245 1.263-1.555 2.555-3.93 3.877 1.53.19 2.85 1.128 3.961 2.814"/>
+        </g>
+    </g>
+</symbol><symbol id="icon-icon-software-3" viewBox="0 0 24 24">
+    <title>
+        33CCFA81-BE00-47A6-8B5F-0736A0290E0F
+    </title>
+    <g stroke-width="1.5" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M23.249.75l-14.25 10.5"/>
+        <path d="M6.749 2.25h3"/>
+        <path d="M8.249.75v3"/>
+        <path d="M1.499 8.25h4.5"/>
+        <path d="M3.749 6v4.5"/>
+        <path d="M18.651 23.25a62.472 62.472 0 0 1-.561-5.97"/>
+        <path d="M5.908 17.28a62.148 62.148 0 0 1-.561 5.97"/>
+        <path d="M17.249 9.519c3.569.755 6 2.254 6 3.981 0 2.485-5.037 4.5-11.25 4.5S.749 15.985.749 13.5c0-.258.054-.513.156-.75"/>
+        <path d="M12.749 12.009c3.375.083 6 .719 6 1.491 0 .828-3.022 1.5-6.75 1.5s-6.75-.672-6.75-1.5"/>
+    </g>
 </symbol><symbol id="icon-icon-software-4" viewBox="0 0 24 24">
     <title>
         88C1B978-7585-48AB-A53D-1EFA8ABCA6D6
@@ -70,6 +144,61 @@
         <path d="M11.249.75V19.5"/>
         <path d="M11.249 2.25H22.5a.75.75 0 0 1 .576 1.23l-3.4 2.79a.749.749 0 0 0 0 .96l3.4 2.79a.75.75 0 0 1-.576 1.23H11.249"/>
         <path d="M14.239 15.9c4.343.46 7.51 1.9 7.51 3.6 0 2.071-4.7 3.75-10.5 3.75S.749 21.571.749 19.5c0-1.669 3.054-3.084 7.276-3.57"/>
+    </g>
+</symbol><symbol id="icon-icon-software-5" viewBox="0 0 24 24">
+    <title>
+        DBF30172-BF3C-4F53-B172-9E74087C868F
+    </title>
+    <g stroke-width="1.5" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M13.5 22.5l-2.93-2.344a1.637 1.637 0 0 1 1.751-2.743L13.5 18v-5.25a1.5 1.5 0 0 1 3 0v3l1.993.332A3 3 0 0 1 21 19.041V22.5"/>
+        <path d="M5.249 6h7.5"/>
+        <path d="M5.249 9h7.5"/>
+        <path d="M5.249 12h3.75"/>
+        <path d="M7.5 18H2.249a1.5 1.5 0 0 1-1.5-1.5V3a1.5 1.5 0 0 1 1.5-1.5h19.5a1.5 1.5 0 0 1 1.5 1.5v12"/>
+        <path d="M18.749 1.5v9"/>
+    </g>
+</symbol><symbol id="icon-icon-uxui-1" viewBox="0 0 24 24">
+    <title>
+        43B0AD7D-4D70-40AA-BDE2-0720BDBC14C9
+    </title>
+    <g stroke-width="1.5" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M.749 23.243a7.889 7.889 0 0 1 .651-3.114c.47-.92 2.431-1.558 4.894-2.451.666-.241.556-1.943.261-2.261a4.757 4.757 0 0 1-1.279-3.73 3.2 3.2 0 0 1 2.743-3.422"/>
+        <path d="M11.4 13.094a4.194 4.194 0 0 1-1.17 2.323c-.295.318-.4 2.02.262 2.261 2.462.893 4.424 1.531 4.893 2.451.428.983.654 2.042.666 3.114"/>
+        <path d="M19.367 23.243h2.368v-.817c0-2.894-2-3.361-4.007-4.1-.665-.247-.556-1.984-.261-2.308a4.354 4.354 0 0 0 1.2-2.551"/>
+        <circle cx="15.749" cy="6.007" r="5.25"/>
+        <path d="M23.249 13.507l-3.788-3.788"/>
+    </g>
+</symbol><symbol id="icon-icon-uxui-2" viewBox="0 0 24 24">
+    <title>
+        2E4274DE-D104-4571-A29C-7EDB12D1848F
+    </title>
+    <g transform="translate(0 1)" stroke-width="1.5" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="5.249" cy="17" r="4.5"/>
+        <path d="M9.749 17V3.125a2.625 2.625 0 0 0-5.156-.7L.911 15.806"/>
+        <circle cx="18.749" cy="17" r="4.5"/>
+        <path d="M14.249 17V3.125a2.625 2.625 0 0 1 5.156-.7l3.683 13.377"/>
+        <path d="M9.749 8h4.5v3h-4.5z"/>
+    </g>
+</symbol><symbol id="icon-icon-uxui-3" viewBox="0 0 24 24">
+    <title>
+        A91BEF99-CAF2-4028-B5CA-EEF03DADBD9E
+    </title>
+    <g fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <rect stroke-width="1.5" x="3.749" y=".75" width="19.5" height="19.5" rx="1.5"/>
+        <path d="M20.249 23.25h-18a1.5 1.5 0 0 1-1.5-1.5v-18" stroke-width="1.5"/>
+        <path d="M8.623 6.625a.5.5 0 1 0 0 1 .5.5 0 0 0 0-1"/>
+        <path d="M20.249 15.75L16.38 9.913a.75.75 0 0 0-1.239-.013l-1.995 2.85-1.236-.989a.749.749 0 0 0-1.093.17L8.271 15.75h11.978z" stroke-width="1.5"/>
+    </g>
+</symbol><symbol id="icon-icon-uxui-4" viewBox="0 0 24 18">
+    <title>
+        CEDCCFC9-D422-41E8-B763-B6E142B473D7
+    </title>
+    <g stroke-width="1.5" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M8.249 9.024a5.568 5.568 0 0 0 7.5 0"/>
+        <path d="M9.749 4.5V6"/>
+        <path d="M14.249 4.5V6"/>
+        <path d="M3 10.5V2.25A1.5 1.5 0 0 1 4.5.75h15a1.5 1.5 0 0 1 1.5 1.5v8.25"/>
+        <path d="M.749 13.5A3.75 3.75 0 0 0 4.5 17.25h15a3.75 3.75 0 0 0 3.75-3.75H.749z"/>
     </g>
 </symbol><symbol id="icon-logo" viewBox="0 0 82 31">
     <title>

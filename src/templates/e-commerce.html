@@ -5,7 +5,7 @@
 
 {% block content %}
 
-    {{ header.block({title: 'E-COMMERCE DEVELOPMENT', class: 'header_colored theme-bg'}) }}
+    {{ header.new({title: 'E-COMMERCE DEVELOPMENT', class: 'header_colored theme-bg', color1: "#63F6EB", color2: "#63F6EB"}) }}
     {{topic.build({
 		label: 'help',
 		title: 'TO GO & <br> GROW ONLINE',
@@ -59,14 +59,40 @@
         ] 
     }) }}
     
-    {% include 'partials/components/_how.html' %}
+	{{ how.build({
+		title: "HOW WE DO IT",
+		subtitle: "We build powerful, scalable and easy-to-use e-Commerce websites adapted to our clients needs and market",
+		list: [
+			{
+				svg: "icon-ecomm-1",
+				title: "GUIDANCE & MENTORING",
+				text: "We’ll guide you on the process &  take care of the the heavy stuff"
+			},
+			{
+				svg: "icon-software-1",
+				title: "LARAVEL DEVELOPMENT",
+				text: "Laravel ensures building complex, scalable & robust sites/applications"
+			},
+			{
+				svg: "icon-ecomm-3",
+				title: "CRM CONSULTING",
+				text: "Get real insights: CRM setup, customization & support"
+			},
+			{
+				svg: "icon-ecomm-4",
+				title: "ERP INTEGRATION",
+				text: "Manage your business smartly & keep everything in sync"
+			}
+		]
+    }) }}
+    
     <div class="we-create">
         <div class="we-create__rect theme-bg"></div>
         <div class="we-create__text" style="background-image: url(../img/how-ecommerce.jpg)">we build.</div>
     </div>
 
     {% include 'partials/components/_who.html' %}
-    {{idea.got({text: 'E-COMMERCE PROJECT OR IDEA?' })}}
+    {{idea.got({text: 'E-COMMERCE PROJECT OR IDEA?', color1: "#63F6EB", color2: "#63F6EB" })}}
 
     <div class="more-services">
         <div class="inner">

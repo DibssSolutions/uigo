@@ -5,7 +5,7 @@
 
 {% block content %}
 
-    {{ header.block({title: 'SOFTWARE DEVELOPMENT', class: 'header_colored theme-bg'}) }}
+    {{ header.new({title: 'SOFTWARE DEVELOPMENT', class: 'header_colored theme-bg', color1: "#63F6EB", color2: "#63F6EB"}) }}
     {{topic.build({
 		label: 'build',
 		title: 'EXCEPTIONAL PRODUCTS ',
@@ -59,7 +59,32 @@
         ] 
     }) }}
 
-    {% include 'partials/components/_how.html' %}
+	{{ how.build({
+		title: "HOW WE DO IT",
+		subtitle: "Top-notch Laravel development plus awesome team of QAs. and PMs. working within Agile methodologies.",
+		list: [
+			{
+				svg: "icon-software-1",
+				title: "LARAVEL DEVELOPMENT",
+				text: "Laravel experts building large & robust applications"
+			},
+			{
+				svg: "icon-software-2",
+				title: "AGILE PROCESS",
+				text: "Engaged team that embraces agile practices to deliver great software"
+			},
+			{
+				svg: "icon-software-3",
+				title: "FRONT-END EXPERTISE",
+				text: "Pixel-perfect & detail-oriented front-end team"
+			},
+			{
+				svg: "icon-software-5",
+				title: "QA TESTING",
+				text: "Bugs happen and we have a tireless team testing and debugging"
+			}
+		]
+	}) }}
 
     <div class="we-create">
         <div class="we-create__rect theme-bg"></div>
@@ -67,7 +92,7 @@
     </div>
 
     {% include 'partials/components/_who.html' %}
-    {{idea.got({text: 'SOFTWARE PROJECT OR IDEA?' })}}
+    {{idea.got({text: 'SOFTWARE PROJECT OR IDEA?', color1: "#63F6EB", color2: "#63F6EB" })}}
 
     <div class="more-services">
         <div class="inner">

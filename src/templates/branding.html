@@ -5,7 +5,7 @@
 
 {% block content %}
 
-	{{ header.new({title: 'branding', class: 'header_colored theme-bg'}) }}
+	{{ header.new({title: 'branding', class: 'header_colored theme-bg', color1: "#fff5bb", color2: "#ffe886"}) }}
 	{{topic.build({
 		label: 'are',
 		title: 'VISUAL STORYTELLERS',
@@ -92,7 +92,7 @@
 	</div>
 
 	{% include 'partials/components/_who.html' %}
-	{{idea.got({text: 'branding/identity project or idea?' })}}
+	{{idea.got({text: 'branding/identity project or idea?', color1: "#fff5bb", color2: "#ffe886" })}}
 
 	<div class="more-services">
 		<div class="inner">

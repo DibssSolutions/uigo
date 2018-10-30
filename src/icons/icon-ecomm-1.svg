@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>2C36B74D-5376-41ED-8B0F-DAC49BE7CF59</title>
+    <desc>Created with sketchtool.</desc>
+    <g id="Landing-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="LP---ecommerce" transform="translate(-828.000000, -1679.000000)" stroke="#303A44">
+            <g id="section-3---how" transform="translate(-360.000000, 768.000000)">
+                <g id="Group-4" transform="translate(1090.000000, 896.000000)">
+                    <g id="Group-3">
+                        <g id="how-ecomm-1" transform="translate(83.000000, 0.000000)">
+                            <g id="icon-ecomm-1" transform="translate(16.000000, 15.000000)">
+                                <g id="Regular">
+                                    <path d="M11,4.75 C11.2761424,4.75 11.5,4.97385763 11.5,5.25 C11.5,5.52614237 11.2761424,5.75 11,5.75 C10.7238576,5.75 10.5,5.52614237 10.5,5.25 C10.5,4.97385763 10.7238576,4.75 11,4.75" id="Shape"></path>
+                                    <path d="M11,0.75 C13.4852814,0.75 15.5,2.76471863 15.5,5.25 C15.5,7.171 12.812,10.827 11.591,12.388 C11.448863,12.5699205 11.2308636,12.6762436 11,12.6762436 C10.7691364,12.6762436 10.551137,12.5699205 10.409,12.388 C9.187,10.826 6.5,7.171 6.5,5.25 C6.5,2.76471863 8.51471863,0.75 11,0.75 Z" id="Shape" stroke-width="1.5"></path>
+                                    <path d="M5.005,9.781 C4.49106602,9.88799942 4.07046354,10.2558844 3.896,10.751 L0.455,21.251 C0.292695165,21.7100674 0.363315128,22.2193542 0.644407035,22.6169382 C0.925498943,23.0145223 1.38208552,23.2509307 1.869,23.251 L20.129,23.251 C20.616091,23.2512554 21.072978,23.0149811 21.3543044,22.6173466 C21.6356308,22.2197121 21.7063638,21.7102339 21.544,21.251 L18.1,10.751 C17.924383,10.2533879 17.5002098,9.88465725 16.983,9.78" id="Shape" stroke-width="1.5"></path>
+                                    <path d="M6.499,23.249 L7.999,14.25" id="Shape" stroke-width="1.5"></path>
+                                    <path d="M15.499,23.249 L13.999,14.25" id="Shape" stroke-width="1.5"></path>
+                                    <path d="M1.303,18.75 L20.724,18.75" id="Shape" stroke-width="1.5"></path>
+                                    <path d="M2.749,14.25 L7.999,14.25" id="Shape" stroke-width="1.5"></path>
+                                    <path d="M13.999,14.25 L19.249,14.25" id="Shape" stroke-width="1.5"></path>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -5,7 +5,7 @@
 
 {% block content %}
 
-    {{ header.block({title: 'UX/UI DESIGN', class: 'header_colored theme-bg'}) }}
+    {{ header.new({title: 'UX/UI DESIGN', class: 'header_colored theme-bg', color1: "#fff5bb", color2: "#ffe886"}) }}
     {{topic.build({
 		label: 'craft',
 		title: 'THE EXPERIEnce',
@@ -59,14 +59,40 @@
         ] 
     }) }}
     
-    {% include 'partials/components/_how.html' %}
+	{{ how.build({
+		title: "HOW WE DO IT",
+		subtitle: "From user flows to hi-fidelity mockups we provide the solution you need to define and create your product",
+		list: [
+			{
+				svg: "icon-uxui-1",
+				title: "USER RESEARCH",
+				text: "User interviews, polls, stakeholders & competitive analysis"
+			},
+			{
+				svg: "icon-uxui-2",
+				title: "UX ANALYSIS",
+				text: "User insights, personas, user stories & user flows"
+			},
+			{
+				svg: "icon-uxui-3",
+				title: "UI DESIGN",
+				text: "Low-fidelity wireframes & user testing"
+			},
+			{
+				svg: "icon-uxui-4",
+				title: "PRODUCTION",
+				text: "High fidelity mockups, testing & development "
+			}
+		]
+    }) }}
+    
     <div class="we-create">
         <div class="we-create__rect theme-bg"></div>
         <div class="we-create__text" style="background-image: url(../img/how-uxui.jpg)">we design.</div>
     </div>
 
     {% include 'partials/components/_who.html' %}
-    {% include 'partials/components/_got-a.html' %}
+    {{idea.got({text: 'UX/UI PROJECT OR IDEA?', color1: "#fff5bb", color2: "#ffe886" })}}
 
     <div class="more-services">
         <div class="inner">
