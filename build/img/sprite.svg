@@ -19,22 +19,28 @@
     </title>
     <path d="M9.766.157v2.946H8.014c-.64 0-1.071.134-1.295.402-.223.268-.335.67-.335 1.205v2.11h3.27l-.435 3.303H6.384v8.471H2.97v-8.47H.123V6.82H2.97V4.387c0-1.384.387-2.457 1.161-3.22C4.904.404 5.934.023 7.222.023c1.093 0 1.941.045 2.544.134z" fill-rule="evenodd"/>
 </symbol><symbol id="icon-icon-branding-1" viewBox="0 0 22 24">
-    <style>
-        .st0{fill:none;stroke:#303a44;stroke-width:1.5;stroke-linecap:round;stroke-linejoin:round}
-    </style>
     <title>
         10A05665-5FE3-444B-93BE-64673E6CF987
     </title>
-    <path id="Shape" class="st0" d="M10 11.9l4.2-4.2"/>
-    <path id="Shape_1_" class="st0" d="M14.2 7.7l.6-3.8L18 .8l.5 2.6 2.6.5-3.2 3.2z"/>
-    <path id="Shape_2_" class="st0" d="M20.1 9.5c1.1 4.1-.6 8.5-4.2 10.7s-8.3 1.9-11.5-.8S0 12.1 1.7 8.2s5.7-6.3 10-5.9"/>
-    <path id="Shape_3_" class="st0" d="M15.7 10.7c.5 2.2-.4 4.5-2.2 5.7-1.9 1.2-4.3 1.1-6.1-.3s-2.5-3.7-1.7-5.8 2.7-3.5 5-3.5"/>
-    <path id="Shape_4_" class="st0" d="M5.5 20.3l-.8 3"/>
-    <path id="Shape_5_" class="st0" d="M16 20.3l.8 3"/>
+    <g stroke-width="1.5" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M10.015 11.859l4.167-4.167"/>
+        <path d="M14.182 7.692l.568-3.75L17.998.75l.502 2.624 2.624.502-3.192 3.248z"/>
+        <path d="M20.054 9.513A9.75 9.75 0 1 1 11.613 2.3"/>
+        <path d="M15.721 10.737a5.251 5.251 0 1 1-5.1-3.987"/>
+        <path d="M5.515 20.25l-.75 3"/>
+        <path d="M16.015 20.25l.75 3"/>
+    </g>
 </symbol><symbol id="icon-icon-branding-2" viewBox="0 0 24 24">
     <title>
-        424D68F3-9FE7-440E-93ED-BABE9B1D91AB
+        Group
     </title>
+    <g stroke-width="1.5" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M22.191 1.811a3.631 3.631 0 0 0-5.157.035L2.569 16.307l-1.82 6.94 6.942-1.819L22.156 6.967a3.628 3.628 0 0 0 .035-5.156z"/>
+        <path d="M16.621 2.26l5.122 5.12"/>
+        <path d="M14.531 4.348l5.122 5.12"/>
+        <path d="M2.569 16.307l3.59 1.532 1.536 3.584"/>
+        <path d="M17.092 6.908L6.159 17.838"/>
+    </g>
 </symbol><symbol id="icon-icon-branding-3" viewBox="0 0 24 24">
     <title>
         4571FD3D-2770-417D-B523-6FE44EF5C6CF

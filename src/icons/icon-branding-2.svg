@@ -1,15 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Generator: sketchtool 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
-    <title>424D68F3-9FE7-440E-93ED-BABE9B1D91AB</title>
-    <desc>Created with sketchtool.</desc>
-    <g id="Landing-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="LP---Branding" transform="translate(-1068.000000, -1678.000000)">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Landing-Pages" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="LP---Branding" transform="translate(-1068.000000, -1678.000000)" stroke="#303A44" stroke-width="1.5">
             <g id="section-3---how" transform="translate(-360.000000, 768.000000)">
                 <g id="Features-how" transform="translate(1090.000000, 895.000000)">
                     <g id="Group-3-Copy" transform="translate(240.000000, 0.000000)">
                         <g id="how-branding-2" transform="translate(83.000000, 0.000000)">
-                            <g id="icon-branding-2" transform="translate(15.000000, 15.000000)"></g>
+                            <g id="Group" transform="translate(15.000000, 15.000000)">
+                                <g id="Regular">
+                                    <path d="M22.191,1.811 C21.504525,1.12791039 20.5736161,0.747354518 19.605207,0.753927005 C18.6367979,0.760499493 17.7111401,1.15365568 17.034,1.846 L2.569,16.307 L0.749,23.247 L7.691,21.428 L22.156,6.967 C22.8487796,6.29030098 23.242257,5.36471162 23.2488308,4.39629957 C23.2554045,3.42788752 22.874529,2.49704169 22.191,1.811 Z" id="Shape"></path>
+                                    <path d="M16.621,2.26 L21.743,7.38" id="Shape"></path>
+                                    <path d="M14.531,4.348 L19.653,9.468" id="Shape"></path>
+                                    <polyline id="Shape" points="2.569 16.307 6.159 17.839 7.695 21.423"></polyline>
+                                    <path d="M17.092,6.908 L6.159,17.838" id="Shape"></path>
+                                </g>
+                            </g>
                         </g>
                     </g>
                 </g>

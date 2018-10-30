@@ -1,4 +1,9 @@
 .how
+    padding: 126px 0 60px
+    +md
+        padding: 60px 0 20px
+    +sm
+        padding: 40px 0 0
     &__content
         padding: 0 115px
         display: flex
@@ -20,6 +25,7 @@
             margin-top: 20px
     &__subtitle
         text-align: left
+        margin-top: 8px
         +md
             text-align: center
     &__wrap
@@ -33,6 +39,7 @@
         +xs
             flex: 0 0 100%
             padding: 10px
+            max-width: 100%
 
 .how-item
     display: flex
@@ -46,9 +53,12 @@
         display: flex
         align-items: center
         justify-content: center
+        color: #303a44
         .icon
             display: block
             font-size: 24px
+            fill: none
+            stroke: currentColor
     &__number
         position: absolute
         left: 0
