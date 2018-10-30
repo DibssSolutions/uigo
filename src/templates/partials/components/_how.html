@@ -1,47 +1,29 @@
-<div class="how">
-    <div class="how__inner inner">
-        <div class="how__content">
-            <div class="how__text">
-                <h3 class="how__title title">HOW WE DO IT</h3>
-                <div class="how__subtitle subtitle">Brand Identity design fascinates us. Human insights, innovation, and storytelling are part of our creative process.</div>
-            </div>
-            <div class="how__list">
-                <div class="how__wrap">
-                    {% for item in [
-                        {
-                            svg: "icon-branding-1",
-                            title: "SOLVE PROBLEMS",
-                            text: "Acknowledge the challenge and work towards a solution"
-                        },
-                        {
-                            svg: "icon-branding-2",
-                            title: "EXPLORE & INNOVATE",
-                            text: "Research, briefs and exploration. Lots of sketching & ideas!"
-                        },
-                        {
-                            svg: "icon-branding-3",
-                            title: "STORYTELLING",
-                            text: "We create with the customer at the heart of the story"
-                        },
-                        {
-                            svg: "icon-software-4",
-                            title: "CREATE VALUE",
-                            text: "We deliver brand experiences that connect, transcend and stick"
-                        }
-                    ] %}
-                        <div class="how__item how-item">
-                            <div class="how-item__img theme-bg">
-                                <span class="how-item__number">{{ loop.index }}</span>
-                                {{ mixins.icon(item.svg) }}
-                            </div>
-                            <div class="how-item__wrap">
-                                <div class="how-item__title">{{ item.title }}</div>
-                                <div class="how-item__text">{{ item.text }}</div>
-                            </div>
-                        </div>
-                    {% endfor %}
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+{% import "partials/_mixins.html" as mixins %}
+{% macro build(props) %}
+	<div class="how">
+		<div class="how__inner inner">
+			<div class="how__content">
+				<div class="how__text">
+					<h3 class="how__title title">{{ props.title }}</h3>
+					<div class="how__subtitle subtitle">{{ props.subtitle }}</div>
+				</div>
+				<div class="how__list">
+					<div class="how__wrap">
+						{% for item in props.list %}
+							<div class="how__item how-item">
+								<div class="how-item__img theme-bg">
+									<span class="how-item__number">{{ loop.index }}</span>
+									{{ mixins.icon(item.svg) }}
+								</div>
+								<div class="how-item__wrap">
+									<div class="how-item__title">{{ item.title }}</div>
+									<div class="how-item__text">{{ item.text }}</div>
+								</div>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endmacro %}
