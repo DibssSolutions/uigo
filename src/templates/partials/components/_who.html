@@ -1,7 +1,7 @@
-<div class="who">
+<div class="who" data-anim-parent>
     <div class="who__inner inner">
-        <h3 class="who__title title">who we are</h3>
-        <div class="who__subtitle subtitle">A wicked awesome Software & Design Studio</div>
+        <h3 class="who__title title"  data-anim-from="bottom">who we are</h3>
+        <div class="who__subtitle subtitle" data-anim-from="bottom">A wicked awesome Software & Design Studio</div>
         <div class="who__content">
             {% for item in [
                 {
@@ -94,7 +94,7 @@
                     text: "We love helping people by creating innovative and top-quality products"
                 }
             ] %}
-                <div class="who__item who-item">
+                <div class="who__item who-item"  data-anim-from="bottom">
                     <div class="who-item__img">{{ item.svg | safe }}</div>
                     <div class="who-item__title">{{ item.title }}</div>
                     <div class="who-item__text">{{ item.text }}</div>
