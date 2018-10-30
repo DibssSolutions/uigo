@@ -9,3 +9,66 @@
         color: $limedSpruce
         display: inline-block
 
+.menu__inner_pos
+    position: initial
+.contacts-abs
+    position: absolute
+    left: 0
+    top: 0
+    width: 100vw
+    max-width: none
+    z-index: 5
+    &__bg
+        position: absolute
+        left: 0
+        top: 0
+        right: 0
+        bottom: 0
+        display: flex
+        background-color: #fafafa
+        box-shadow: 0 24px 55px 0 rgba(0, 0, 0, 0.19)
+        +sm
+            flex-direction: column-reverse
+    &__left,
+    &__right
+        width: 50%
+        +sm
+            width: 100%
+    &__left
+        +sm
+            height: 50%
+    &__form
+        float: right
+        margin-top: 16px
+        +md
+            width: 40%
+        +sm
+            float: none
+            margin: 0 auto
+            max-width: 460px
+            width: 100%
+            padding-bottom: 50px
+    .got-a
+        padding: 0
+        margin: 0
+    &__got-a
+        float: left
+        text-align: left
+        max-width: 400px
+        +sm
+            max-width: 100%
+            margin-top: 20px
+    &__content
+        padding: 166px 0 156px
+        +sm
+            padding: 71px 0 70px
+    &__svg
+        height: 100%
+        svg
+            max-width: 100%
+            width: 100%
+            height: 100%
+    &__footer
+        max-width: 313px
+        margin-top: 48px
+

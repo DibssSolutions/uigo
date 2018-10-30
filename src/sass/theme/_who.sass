@@ -1,5 +1,5 @@
 .who
-    padding: 99px 0 0
+    padding: 109px 0 0
     +md
         padding-top: 60px
     +sm
@@ -8,24 +8,25 @@
         text-align: center
     &__subtitle
         text-align: center
-        margin-top: 8px
+        margin-top: 7px
     &__content
         padding: 0 88px 0 142px
         display: flex
         justify-content: space-between
-        margin-top: 60px
-        +md
+        margin-top: 59px
+        +lg
             padding: 0
+            max-width: 940px
+            margin: 59px auto 0
         +sm
             flex-direction: column
-            align-items: center
             margin-top: 30px
     &__item
         &:not(:first-child)
             margin-left: 15px
             +sm
                 margin-left: 0
-                margin-top: 40px
+                margin-top: 15px
 
 .who-item
     padding: 40px 33px 34px 34px
@@ -36,18 +37,20 @@
     max-width: 287px
     box-shadow: 0 33px 71px 0 rgba(63, 86, 110, 0.1), 0 0 24px 0 rgba(99, 246, 235, 0.04)
     background-color: $white
+    +sm
+        max-width: none
     &__img
         max-width: 100%
-        min-height: 109px
+        min-height: 110px
         display: flex
         align-items: center
     &__title
-        margin-top: 22px
+        margin-top: 25px
         font-family: $montserrat
         text-transform: uppercase
         font-size: 14px
         letter-spacing: 0.4px
         font-weight: 600
     &__text
-        margin-top: 6px
+        margin-top: 2px
         color: rgba($dark,.7)
