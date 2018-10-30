@@ -1,15 +1,15 @@
 {% macro build(props) %}
     <div class="what">
-        <div class="what__inner inner">
-            <h3 class="what__title title">
+        <div class="what__inner inner" data-anim-parent>
+            <h3 class="what__title title" data-anim-from="bottom">
                 {{props.title}}
             </h3>
-            <p class="what__descr subtitle">
-                {{props.subtitle}}
+            <p class="what__descr subtitle{% if props.subtitleModifier %} what__descr_{{props.subtitleModifier}}{% endif %}" data-anim-from="bottom">
+                {{props.subtitle | safe}}
             </p>
             <div class="what__row">
                 {% for col in props.cols %}
-                    <div class="card{% if col.modifier %} card_{{col.modifier}}{% endif %}">
+                    <div class="card{% if col.modifier %} card_{{col.modifier}}{% endif %}{% if col.generalModifier %} card_{{col.generalModifier}}{% endif %}" data-anim-from="bottom">
                         <div class="card__img-wrapper">
                             <img src="img/{{col.img.src}}" alt="{{col.img.alt}}" class="card__image"/>
                         </div>

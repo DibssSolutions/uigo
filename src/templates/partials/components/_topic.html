@@ -1,16 +1,17 @@
 {% macro build(props) %}
     <section class="topic">
-        <div class="topic__inner inner">
+        <div class="topic__inner inner" data-anim-parent="data-anim-parent">
             <div class="topic__container">
-                <div class="topic__text-wrap">
-                    <h5 class="topic__label title">WE {{props.label}}</h5>
+                <div class="topic__text-wrap" data-anim-from="bottom">
+                    <h5 class="topic__label title">WE
+                        {{props.label}}</h5>
                     <h2 class="topic__title theme-color">{{props.title | safe}}</h2>
                     <div class="topic__descr">{{props.descr | safe}}</div>
                     <div class="topic__btn">
-                        <button class="btn btn_lg btn_black btn_no-border btn_topic theme-bg">{{props.btnText or 'Contact Us'}}</button>
+                        <button class="btn btn_lg btn_black btn_no-border btn_topic theme-bg js-nav-contacts">{{props.btnText or 'Contact Us'}}</button>
                     </div>
                 </div>
-                <div class="topic__img-wrap">
+                <div class="topic__img-wrap" data-anim-from="bottom">
                     <div class="topic__img">
                         {{props.img | safe}}
                     </div>

@@ -23,7 +23,9 @@
               <use xlink:href="img/sprite.svg#icon-logo"></use>
             </svg>
           </a>
-          <h1 class="header__title"> UX/UI DESIGN </h1>
+          <h1 class="header__title">
+            <span> UX/UI DESIGN </span>
+          </h1>
           <button class="header__nav js-nav-control"></button>
         </div>
         <div class="menu js-nav">
@@ -85,7 +87,6 @@
                               </g>
                             </g>
                           </g>
-                        </g>
                       </svg>
                     </div>
                   </div>
@@ -124,7 +125,9 @@
                   <div class="menu__subtitle">URUGUAY</div>
                   <ul class="menu__meta">
                     <li>Cassinoni 1011, Montevideo.</li>
-                    <li><a href="tel:+5981556543">+598 155 6543</a></li>
+                    <li>
+                      <a href="tel:+5981556543">+598 155 6543</a>
+                    </li>
                   </ul>
                 </div>
                 <div class="menu__info">
@@ -132,7 +135,9 @@
                   <div class="menu__subtitle">UNITED STATES</div>
                   <ul class="menu__meta">
                     <li>2101 Brickell Ave, Apt 401 Miami, FL 33129</li>
-                    <li><a href="tel:+19419000806">+ 19419000806</a></li>
+                    <li>
+                      <a href="tel:+19419000806">+ 19419000806</a>
+                    </li>
                   </ul>
                 </div>
                 <ul class="menu__subnav">
@@ -156,17 +161,17 @@
       </header>
       <!-- end header -->
       <section class="topic">
-        <div class="topic__inner inner">
+        <div class="topic__inner inner" data-anim-parent="data-anim-parent">
           <div class="topic__container">
-            <div class="topic__text-wrap">
+            <div class="topic__text-wrap" data-anim-from="bottom">
               <h5 class="topic__label title">WE craft</h5>
               <h2 class="topic__title theme-color">THE EXPERIEnce</h2>
               <div class="topic__descr">We thoroughly CRAFT THE EXPERIENCE that connects users with brands in digital platforms taking care of every step of the design & development process.</div>
               <div class="topic__btn">
-                <button class="btn btn_lg btn_black btn_no-border btn_topic theme-bg">Contact Us</button>
+                <button class="btn btn_lg btn_black btn_no-border btn_topic theme-bg js-nav-contacts">Contact Us</button>
               </div>
             </div>
-            <div class="topic__img-wrap">
+            <div class="topic__img-wrap" data-anim-from="bottom">
               <div class="topic__img">
                 <svg width="285" height="225" xmlns="http://www.w3.org/2000/svg">
                   <g fill="none" fill-rule="evenodd">
@@ -221,38 +226,38 @@
                   <a class="navigation__link theme-pseudo" href="#Who">Who</a>
                 </li>
               </ul>
-              <button class="navigation__btn btn btn_black btn_no-border btn_middle theme-bg">Contact Us</button>
+              <button class="navigation__btn btn btn_black btn_no-border btn_middle theme-bg js-nav-contacts">Contact Us</button>
             </div>
           </div>
         </div>
       </div>
       <div class="what">
-        <div class="what__inner inner">
-          <h3 class="what__title title"> WHAT WE DO </h3>
-          <p class="what__descr subtitle"> We help businesses start and thrive online with powerful &amp; scalable websites </p>
+        <div class="what__inner inner" data-anim-parent>
+          <h3 class="what__title title" data-anim-from="bottom"> WHAT WE DO </h3>
+          <p class="what__descr subtitle" data-anim-from="bottom"> We enhance user satisfaction & <br> create easy-to-use plus eye-catching interfaces </p>
           <div class="what__row">
-            <div class="card card_starcenter">
+            <div class="card card_rypt" data-anim-from="bottom">
               <div class="card__img-wrapper">
-                <img src="img/what-ecomm-starcenter.png" alt="starcenter" class="card__image" />
+                <img src="img/what-uxui-rypt.png" alt="rypt" class="card__image" />
               </div>
               <div class="card__brand">
-                <img src="img/logos/starcenter-logo.png" alt="logo-starcenter" />
+                <img src="img/logos/logo-rypt.png" alt="logo-rypt" />
               </div>
             </div>
-            <div class="card card_sammel-2">
+            <div class="card card_golive" data-anim-from="bottom">
               <div class="card__img-wrapper">
-                <img src="img/what-ecomm-sammel.png" alt="sammel" class="card__image" />
+                <img src="img/what-uxui-mcgolive.png" alt="golive" class="card__image" />
               </div>
               <div class="card__brand">
-                <img src="img/logos/logo-sammel.png" alt="logo-sammel" />
+                <img src="img/logos/logo-mcgolive.png" alt="logo-golive" />
               </div>
             </div>
-            <div class="card card_astroselling">
+            <div class="card card_cloudtimes-2" data-anim-from="bottom">
               <div class="card__img-wrapper">
-                <img src="img/what-ecomm-astroselling.png" alt="astroselling" class="card__image" />
+                <img src="img/what-uxui-cloudtimes.png" alt="cloudtimes" class="card__image" />
               </div>
               <div class="card__brand">
-                <img src="img/logos/logo-astroselling.png" alt="logo-astroselling" />
+                <img src="img/logos/logo-cloudtimes.png" alt="logo-cloudtimes" />
               </div>
             </div>
           </div>

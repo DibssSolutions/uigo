@@ -90,11 +90,9 @@
                 </div>
             </div>
         </div>
-</header>
-<!-- end header -->
+    </header>
+    <!-- end header -->
 {% endmacro %}
-
-
 
 {% macro new(props) %}
 <!-- begin header -->
@@ -104,7 +102,9 @@
             {{mixins.icon('logo', 'logo__icon')}}
         </a>
         <h1 class="header__title">
-            {{props.title}}
+            <span>
+                {{props.title}}
+            </span>
         </h1>
         <button class="header__nav js-nav-control"></button>
     </div>
@@ -160,41 +160,44 @@
                                                 </g>
                                             </g>
                                         </g>
-                                    </g>
-                                </svg>
+                                    </svg>
+                                </div>
                             </div>
+                            <div class="contacts-abs__right"></div>
                         </div>
-                        <div class="contacts-abs__right"></div>
-                    </div>
-                    <div class="contacts__content contacts-abs__content">
-                        <div class="inner">
-                            <form action="/" class="contacts__form contacts-abs__form">
-                                <div class="contacts__title theme-color">let’s talk</div>
-                                <div class="contacts__fields">
-                                    {% for item in [
-                                        { placeholder: 'Name' },
-                                        { placeholder: 'Email' },
-                                        { placeholder: 'Message' }
-                                    ] %}
-                                        <div class="contacts__field">
-                                            <input type="text" class="input" placeholder="{{item.placeholder | upper}}">
-                                        </div>
-                                    {% endfor %}
-                                </div>
-                                <div class="contacts__footer contacts-abs__footer">
-                                    <button class="btn btn_lg btn_wide btn_no-border theme-bg contacts__submit" type="submit">contact us</button>
-                                </div>
-                            </form>
-                            <div class="got-a contacts-abs__got-a">
+                        <div class="contacts__content contacts-abs__content">
+                            <div class="inner">
+                                <form action="/" class="contacts__form contacts-abs__form">
+                                    <div class="contacts__title theme-color">let’s talk</div>
+                                    <div class="contacts__fields">
+                                        {% for item in[
+                                            {
+                                                placeholder: 'Name'
+                                            }, {
+                                                placeholder: 'Email'
+                                            }, {
+                                                placeholder: 'Message'
+                                            }
+                                        ] %}
+                                            <div class="contacts__field">
+                                                <input type="text" class="input" placeholder="{{item.placeholder | upper}}">
+                                            </div>
+                                        {% endfor %}
+                                    </div>
+                                    <div class="contacts__footer contacts-abs__footer">
+                                        <button class="btn btn_lg btn_wide btn_no-border theme-bg contacts__submit" type="submit">contact us</button>
+                                    </div>
+                                </form>
+                                <div class="got-a contacts-abs__got-a">
                                     <h3 class="got-a__title title">got a</h3>
                                     <div class="got-a__text">branding project or idea?</div>
                                     <div class="got-a__slogan subtitle">We create and innovate to build impactful brand experiences that connect with customers</div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="menu__content">
-                    {% for item in [
+                    <div class="menu__content">
+                        {% for item in [
                         {
                             icon: 'uy-flag',
                             iconAlt: 'Uruguay Flag',
@@ -212,26 +215,28 @@
                             phoneLink: '+19419000806'
                         }
                     ] %}
-                        <div class="menu__info">
-                            <img src="img/{{item.icon}}.svg" alt="{{item.iconAlt}}" class="menu__icon">
-                            <div class="menu__subtitle">{{item.title}}</div>
-                            <ul class="menu__meta">
-                                <li>{{item.address}}</li>
-                                <li><a href="tel:{{item.phoneLink}}">{{item.phone}}</a></li>
-                            </ul>
-                        </div>
-                    {% endfor %}
-                    <ul class="menu__subnav">
-                        {% for item in [ 'CONTACT US', 'FACEBOOK', 'BEHANCE', 'INSTAGRAM' ] %}
-                            <li class="menu__item">
-                                <a href="#" class="menu__link {% if loop.first %}menu__link_contacts js-nav-contacts{% endif %}">{{item}}</a>
-                            </li>
+                            <div class="menu__info">
+                                <img src="img/{{item.icon}}.svg" alt="{{item.iconAlt}}" class="menu__icon">
+                                <div class="menu__subtitle">{{item.title}}</div>
+                                <ul class="menu__meta">
+                                    <li>{{item.address}}</li>
+                                    <li>
+                                        <a href="tel:{{item.phoneLink}}">{{item.phone}}</a>
+                                    </li>
+                                </ul>
+                            </div>
                         {% endfor %}
-                    </ul>
+                        <ul class="menu__subnav">
+                            {% for item in['CONTACT US', 'FACEBOOK', 'BEHANCE', 'INSTAGRAM'] %}
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link {% if loop.first %}menu__link_contacts js-nav-contacts{% endif %}">{{item}}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</header>
-<!-- end header -->
+    </header>
+    <!-- end header -->
 {% endmacro %}
