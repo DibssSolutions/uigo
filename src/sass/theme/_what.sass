@@ -1,11 +1,14 @@
 .what
-    padding: 82px 0 92px
+    padding: 90px 0 92px
     border-bottom: 1px solid rgba(#979797, 0.3) 
+    +sm 
+        padding: 60px 0
     &__title
         text-align: center
     &__descr
         padding: 0 235px
-        margin-bottom: 70px
+        margin-bottom: 67px
+        margin-top: 7px
         +md 
             padding: 0 100px
         +sm 
@@ -15,37 +18,60 @@
         justify-content: center
         margin: 0 -20px
         padding: 0 116px
+        +lg 
+            padding: 0 
+            max-width: 970px
+            margin: 0 auto
         +md 
-            padding: 0 50px
+            padding: 0 
+            margin: 0 -8px
         +sm 
             flex-direction: column
-            margin: 0
+            // align-items: center
             padding: 0
-
-    &__col
+    .card
         padding: 0 20px
         flex: 0 0 33.333%
+        +lg
+            padding: 0 15px
+        +md 
+            padding: 0 8px
         +sm 
-            width: 100%
-            flex: 0 0 auto
+            flex: 0 0 100%
             padding-bottom: 20px
+
+.card
     &__img-wrapper
         position: relative
-        width: 100%
+        max-width: 287px
+        height: 271px
         background-color: $white
-        padding-bottom: calc(100% - 20px)
         box-shadow: 0 33px 71px 0 rgba(63, 86, 110, 0.1), 0 0 24px 0 rgba(99, 246, 235, 0.04)
         font-size: 0
+        +lg 
+            +vertical
+        +sm 
+            max-width: 100% 
     &__image
         position: absolute
-        top: 0  
-        left: 0
-        max-width: 100% 
+        +lg
+            position: static
+            display: inline-block
+            vertical-align: middle
+            max-width: 100%
+        .card_eset &
+            margin-top: 20px
+            margin-left: -40px
+            +lg
+                margin: 0
+
     &__brand
-        margin-top: 30px
+        margin-top: 26px
         min-height: 30px
         text-align: center
         position: relative
+        .card_sinae &
+            margin-top: 21px
         +sm 
             margin-top: 10px
         img 

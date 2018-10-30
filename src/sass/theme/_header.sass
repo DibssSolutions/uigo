@@ -1,13 +1,37 @@
 .header
-    margin-bottom: 100px
-    text-align: center
-    padding-bottom: 47px
-    .logo
-        float: left
     &__title
         text-transform: uppercase
         color: $limedSpruce
-        display: inline-block
+        font-family: $montserrat
+        font-size: 20px
+        font-weight: 600
+        +vcenter
+        +sm 
+            display: inline-block
+            font-size: 16px
+            position: static
+            transform: none
+            width: calc(100% - 84px - 35px)
+            text-align: center
+        +xs 
+            font-size: 14px
+        span
+            display: inline-block   
+            vertical-align: middle
+            
+    &_colored
+        padding-bottom: 47px
+        +sm 
+            padding-bottom: 20px
+        .logo
+            +sm 
+                vertical-align: middle
+        .header__nav
+            +sm 
+                display: inline-block
+                vertical-align: middle
+        .logo__icon
+            fill: $limedSpruce
 
 .menu__inner_pos
     position: initial

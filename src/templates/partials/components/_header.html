@@ -1,49 +1,56 @@
 {% import "partials/_mixins.html" as mixins %}
 {% macro block(props) %}
-<!-- begin header -->
-<header class="header{% if props.class %} {{props.class}}{% endif %} js-header">
-    <div class="inner header__inner">
-        <a href="#" class="logo">
-            {{mixins.icon('logo', 'logo__icon')}}
-        </a>
-        <h1 class="header__title">
-            {{props.title}}
-        </h1>
-        <button class="header__nav js-nav-control"></button>
-    </div>
-    <div class="menu js-nav">
-        <div class="menu__center">
-            <div class="inner menu__inner">
-                <nav class="nav menu__nav">
-                    <ul class="nav__list">
-                        {% for item in [ 'work', 'services', 'about us', 'contact' ] %}
-                            <li class="nav__item">
-                                <a href="#" class="nav__link {% if loop.last %}js-nav-contacts{% endif %}">{{item}}</a>
-                            </li>
-                        {% endfor %}
-                    </ul>
-                </nav>
-                <div class="contacts menu__contacts">
-                    <form action="/" class="contacts__form">
-                        <div class="contacts__title">drop us a line</div>
-                        <div class="contacts__fields">
-                            {% for item in [
-                                { placeholder: 'Name' },
-                                { placeholder: 'Email' },
-                                { placeholder: 'Message' }
-                            ] %}
-                                <div class="contacts__field">
-                                    <input type="text" class="input" placeholder="{{item.placeholder | upper}}">
-                                </div>
+    <!-- begin header -->
+    <header class="header{% if props.class %} {{props.class}}{% endif %} js-header">
+        <div class="inner header__inner">
+            <a href="#" class="logo">
+                {{mixins.icon('logo', 'logo__icon')}}
+            </a>
+            <h1 class="header__title">
+                <span>
+                    {{props.title}}
+                </span>
+            </h1>
+            <button class="header__nav js-nav-control"></button>
+        </div>
+        <div class="menu js-nav">
+            <div class="menu__center">
+                <div class="inner menu__inner">
+                    <nav class="nav menu__nav">
+                        <ul class="nav__list">
+                            {% for item in['work', 'services', 'about us', 'contact'] %}
+                                <li class="nav__item">
+                                    <a href="#" class="nav__link {% if loop.last %}js-nav-contacts{% endif %}">{{item}}</a>
+                                </li>
                             {% endfor %}
-                        </div>
-                        <div class="contacts__footer">
-                            <button class="btn-text contacts__submit" type="submit"><span>Send</span>{{mixins.icon('arrow-right')}}</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="menu__content">
-                    {% for item in [
+                        </ul>
+                    </nav>
+                    <div class="contacts menu__contacts">
+                        <form action="/" class="contacts__form">
+                            <div class="contacts__title">drop us a line</div>
+                            <div class="contacts__fields">
+                                {% for item in[
+                                    {
+                                        placeholder: 'Name'
+                                    }, {
+                                        placeholder: 'Email'
+                                    }, {
+                                        placeholder: 'Message'
+                                    }
+                                ] %}
+                                    <div class="contacts__field">
+                                        <input type="text" class="input" placeholder="{{item.placeholder | upper}}">
+                                    </div>
+                                {% endfor %}
+                            </div>
+                            <div class="contacts__footer">
+                                <button class="btn-text contacts__submit" type="submit">
+                                    <span>Send</span>{{mixins.icon('arrow-right')}}</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="menu__content">
+                        {% for item in [
                         {
                             icon: 'uy-flag',
                             iconAlt: 'Uruguay Flag',
@@ -61,26 +68,28 @@
                             phoneLink: '+19419000806'
                         }
                     ] %}
-                        <div class="menu__info">
-                            <img src="img/{{item.icon}}.svg" alt="{{item.iconAlt}}" class="menu__icon">
-                            <div class="menu__subtitle">{{item.title}}</div>
-                            <ul class="menu__meta">
-                                <li>{{item.address}}</li>
-                                <li><a href="tel:{{item.phoneLink}}">{{item.phone}}</a></li>
-                            </ul>
-                        </div>
-                    {% endfor %}
-                    <ul class="menu__subnav">
-                        {% for item in [ 'CONTACT US', 'FACEBOOK', 'BEHANCE', 'INSTAGRAM' ] %}
-                            <li class="menu__item">
-                                <a href="#" class="menu__link {% if loop.first %}menu__link_contacts js-nav-contacts{% endif %}">{{item}}</a>
-                            </li>
+                            <div class="menu__info">
+                                <img src="img/{{item.icon}}.svg" alt="{{item.iconAlt}}" class="menu__icon">
+                                <div class="menu__subtitle">{{item.title}}</div>
+                                <ul class="menu__meta">
+                                    <li>{{item.address}}</li>
+                                    <li>
+                                        <a href="tel:{{item.phoneLink}}">{{item.phone}}</a>
+                                    </li>
+                                </ul>
+                            </div>
                         {% endfor %}
-                    </ul>
+                        <ul class="menu__subnav">
+                            {% for item in['CONTACT US', 'FACEBOOK', 'BEHANCE', 'INSTAGRAM'] %}
+                                <li class="menu__item">
+                                    <a href="#" class="menu__link {% if loop.first %}menu__link_contacts js-nav-contacts{% endif %}">{{item}}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 </header>
 <!-- end header -->
 {% endmacro %}
