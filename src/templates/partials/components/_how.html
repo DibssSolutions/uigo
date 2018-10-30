@@ -1,13 +1,13 @@
 {% import "partials/_mixins.html" as mixins %}
 {% macro build(props) %}
-	<div class="how">
+	<div class="how" data-anim-parent>
 		<div class="how__inner inner">
 			<div class="how__content">
-				<div class="how__text">
+				<div class="how__text" data-anim-from="bottom">
 					<h3 class="how__title title">{{ props.title }}</h3>
 					<div class="how__subtitle subtitle">{{ props.subtitle }}</div>
 				</div>
-				<div class="how__list">
+				<div class="how__list" data-anim-from="bottom">
 					<div class="how__wrap">
 						{% for item in props.list %}
 							<div class="how__item how-item">
