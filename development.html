@@ -23,7 +23,9 @@
               <use xlink:href="img/sprite.svg#icon-logo"></use>
             </svg>
           </a>
-          <h1 class="header__title"> SOFTWARE DEVELOPMENT </h1>
+          <h1 class="header__title">
+            <span> SOFTWARE DEVELOPMENT </span>
+          </h1>
           <button class="header__nav js-nav-control"></button>
         </div>
         <div class="menu js-nav">
@@ -85,7 +87,6 @@
                               </g>
                             </g>
                           </g>
-                        </g>
                       </svg>
                     </div>
                   </div>
@@ -124,7 +125,9 @@
                   <div class="menu__subtitle">URUGUAY</div>
                   <ul class="menu__meta">
                     <li>Cassinoni 1011, Montevideo.</li>
-                    <li><a href="tel:+5981556543">+598 155 6543</a></li>
+                    <li>
+                      <a href="tel:+5981556543">+598 155 6543</a>
+                    </li>
                   </ul>
                 </div>
                 <div class="menu__info">
@@ -132,7 +135,9 @@
                   <div class="menu__subtitle">UNITED STATES</div>
                   <ul class="menu__meta">
                     <li>2101 Brickell Ave, Apt 401 Miami, FL 33129</li>
-                    <li><a href="tel:+19419000806">+ 19419000806</a></li>
+                    <li>
+                      <a href="tel:+19419000806">+ 19419000806</a>
+                    </li>
                   </ul>
                 </div>
                 <ul class="menu__subnav">
@@ -156,19 +161,19 @@
       </header>
       <!-- end header -->
       <section class="topic">
-        <div class="topic__inner inner">
+        <div class="topic__inner inner" data-anim-parent="data-anim-parent">
           <div class="topic__container">
-            <div class="topic__text-wrap">
+            <div class="topic__text-wrap" data-anim-from="bottom">
               <h5 class="topic__label title">WE build</h5>
               <h2 class="topic__title theme-color">EXCEPTIONAL PRODUCTS </h2>
               <div class="topic__descr">We are Laravel experts and our core goal is to BUILD EXCEPTIONAL PRODUCTS with the best code foundation & maintainability. </div>
               <div class="topic__btn">
-                <button class="btn btn_lg btn_black btn_no-border btn_topic theme-bg">Contact Us</button>
+                <button class="btn btn_lg btn_black btn_no-border btn_topic theme-bg js-nav-contacts">Contact Us</button>
               </div>
             </div>
-            <div class="topic__img-wrap">
+            <div class="topic__img-wrap" data-anim-from="bottom">
               <div class="topic__img">
-                <svg width="377" height="199" xmlns="http://www.w3.org/2000/svg">
+                <svg viewbox="0 0 377 199" width="377" height="199" xmlns="http://www.w3.org/2000/svg">
                   <g fill="none" fill-rule="evenodd">
                     <path d="M356.012 88.342c-7.175 0-13.013 5.835-13.013 13.005v13.343c0 7.17 5.838 12.998 13.013 12.998 7.172 0 13.01-5.828 13.01-12.998v-13.343c0-7.17-5.838-13.005-13.01-13.005m0 44.591c-10.072 0-18.26-8.183-18.26-18.243v-13.343c0-10.062 8.188-18.248 18.26-18.248 10.07 0 18.258 8.186 18.258 18.248v13.343c0 10.06-8.189 18.243-18.258 18.243" fill="#000" />
                     <path fill="#000" d="M340.372 105.534h31.275v-5.245h-31.275z" />
@@ -224,17 +229,17 @@
                   <a class="navigation__link theme-pseudo" href="#Who">Who</a>
                 </li>
               </ul>
-              <button class="navigation__btn btn btn_black btn_no-border btn_middle theme-bg">Contact Us</button>
+              <button class="navigation__btn btn btn_black btn_no-border btn_middle theme-bg js-nav-contacts">Contact Us</button>
             </div>
           </div>
         </div>
       </div>
       <div class="what">
-        <div class="what__inner inner">
-          <h3 class="what__title title"> WHAT WE DO </h3>
-          <p class="what__descr subtitle"> We are a team of code-crushing Laravel experts building complex and well-architected products </p>
+        <div class="what__inner inner" data-anim-parent>
+          <h3 class="what__title title" data-anim-from="bottom"> WHAT WE DO </h3>
+          <p class="what__descr subtitle" data-anim-from="bottom"> We are a team of code-crushing Laravel experts building complex and well-architected products </p>
           <div class="what__row">
-            <div class="card card_eset">
+            <div class="card card_eset" data-anim-from="bottom">
               <div class="card__img-wrapper">
                 <img src="img/what-software-eset.png" alt="eset" class="card__image" />
               </div>
@@ -242,7 +247,7 @@
                 <img src="img/logos/logo-eset.png" alt="logo-eset" />
               </div>
             </div>
-            <div class="card card_cloudtimes">
+            <div class="card card_cloudtimes" data-anim-from="bottom">
               <div class="card__img-wrapper">
                 <img src="img/what-software-cloudtimes.png" alt="cloudtimes" class="card__image" />
               </div>
@@ -250,7 +255,7 @@
                 <img src="img/logos/logo-cloudtimes.png" alt="logo-cloudtimes" />
               </div>
             </div>
-            <div class="card card_sammel">
+            <div class="card card_sammel" data-anim-from="bottom">
               <div class="card__img-wrapper">
                 <img src="img/what-uxui-rypt.png" alt="sammel" class="card__image" />
               </div>
