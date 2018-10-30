@@ -2,17 +2,20 @@
     padding: 90px 0 92px
     border-bottom: 1px solid rgba(#979797, 0.3) 
     +sm 
-        padding: 60px 0
+        padding: 40px 0
     &__title
         text-align: center
     &__descr
         padding: 0 230px
         margin-bottom: 67px
         margin-top: 7px
+        &_narrow
+            padding: 0 250px
         +md 
             padding: 0 100px
         +sm 
             padding: 0
+            margin-bottom: 30px
     &__row
         display: flex
         justify-content: center
@@ -38,7 +41,8 @@
             padding: 0 8px
         +sm 
             flex: 0 0 100%
-            padding-bottom: 20px
+            &:not(:last-child)
+                padding-bottom: 20px
 
 .card
     &__img-wrapper
@@ -59,14 +63,10 @@
             display: inline-block
             vertical-align: middle
             max-width: 100%
+
         .card_eset &
             margin-top: 34px
             margin-left: -52px
-            +lg
-                margin: 0
-        .card_cloudtimes &
-            margin-top: -5px
-            margin-left: -6px
             +lg
                 margin: 0
         .card_cloudtimes &
@@ -79,6 +79,40 @@
             margin-left: 28px
             +lg
                 margin: 0
+
+        .card_starcenter &
+            margin-top: 1px
+            margin-left: -31px
+            +lg
+                margin: 0
+        .card_sammel-2 &
+            margin-top: 41px
+            margin-left: -20px
+            +lg
+                margin: 0
+        .card_astroselling &
+            margin-top: 25px
+            margin-left: 94px
+            +lg
+                margin: 0
+
+        .card_rypt &
+            margin-top: 44px
+            margin-left: -73px
+            +lg
+                margin: 0
+        .card_golive &
+            margin-top: 45px
+            margin-left: -20px
+            +lg
+                margin: 0
+        .card_cloudtimes-2 &
+            margin-top: 12px
+            margin-left: 46px
+            +lg
+                margin: 0
+        
+                
         .card_cover &
             width: 100%
             height: 100%
@@ -100,6 +134,10 @@
                 margin-top: 10px
         .card_cloudtimes &
             margin-top: 29px
+            +sm 
+                margin-top: 10px
+        .card_rypt &
+            margin-top: 34px
             +sm 
                 margin-top: 10px
         +sm 

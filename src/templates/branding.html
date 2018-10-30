@@ -16,53 +16,78 @@
     {{ navigation.themeNav({title: 'BRANDING'}) }}
 
     {{ what.build({
-        title: 'WHAT WE DO',
-        subtitle: 'We create and innovate to build impactful brand experiences that connect with customers', 
-        cols: [
-            {   
+		title: 'WHAT WE DO',
+		subtitle: 'We create and innovate to build impactful brand experiences that connect with customers', 
+		cols: [
+			
+			{ 
                 generalModifier: 'cover',
-                img:  
-                    { 
-                        src: 'what-branding-corefone.png', 
-                        alt: 'corefrone'
-                    },
-                    brand:  
-                    { 
-                        src: 'corefrone-logo.png', 
-                        alt: 'corefrone'
-                    }
-            },
-            { 
+				img:  
+					{ 
+						src: 'what-branding-corefone.png', 
+						alt: 'corefrone'
+					},
+					brand:  
+					{ 
+						src: 'corefrone-logo.png', 
+						alt: 'corefrone'
+					}
+			},
+			{ 
                 generalModifier: 'cover',
-                img:  
-                    { 
-                        src: 'what-branding-gallito.png', 
-                        alt: 'gallito'
-                    },
-                brand:  
-                    { 
-                        src: 'gallito-logo.png', 
-                        alt: 'gallito'
-                    }
-            },
-            {   
+				img:  
+					{ 
+						src: 'what-branding-gallito.png', 
+						alt: 'gallito'
+					},
+				brand:  
+					{ 
+						src: 'gallito-logo.png', 
+						alt: 'gallito'
+					}
+			},
+			{   
                 generalModifier: 'cover',
-                modifier: 'sinae',
-                img:  
-                    { 
-                        src: 'what-branding-sinae.png', 
-                        alt: 'sinae'
-                    },
-                brand:  
-                    { 
-                        src: 'logo-sinae.png', 
-                        alt: 'sinae'
-                    }
-            }
-        ] 
-    }) }}
-
-    {% include 'partials/components/_how.html' %}
+				modifier: 'sinae',
+				img:  
+					{ 
+						src: 'what-branding-sinae.png', 
+						alt: 'sinae'
+					},
+				brand:  
+					{ 
+						src: 'logo-sinae.png', 
+						alt: 'sinae'
+					}
+			}
+		] 
+	}) }}
+    {{ how.build({
+		title: "HOW WE DO IT",
+		subtitle: "Brand Identity design fascinates us. Human insights, innovation, and storytelling are part of our creative process.",
+		list: [
+			{
+				svg: "icon-branding-1",
+				title: "SOLVE PROBLEMS",
+				text: "Acknowledge the challenge and work towards a solution"
+			},
+			{
+				svg: "icon-branding-2",
+				title: "EXPLORE & INNOVATE",
+				text: "Research, briefs and exploration. Lots of sketching & ideas!"
+			},
+			{
+				svg: "icon-branding-3",
+				title: "STORYTELLING",
+				text: "We create with the customer at the heart of the story"
+			},
+			{
+				svg: "icon-software-4",
+				title: "CREATE VALUE",
+				text: "We deliver brand experiences that connect, transcend and stick"
+			}
+		]
+	}) }}
 
     <div class="we-create">
         <div class="we-create__rect theme-bg"></div>
@@ -70,7 +95,7 @@
     </div>
 
     {% include 'partials/components/_who.html' %}
-    {{idea.got({ text: 'branding/identity project or idea?' })}}
+    {{idea.got({text: 'branding/identity project or idea?' })}}
 
     <div class="more-services">
         <div class="inner">
@@ -90,4 +115,5 @@
         </div>
     </div>
     {% include 'partials/components/_footer.html' %}
+
 {% endblock %}

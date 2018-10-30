@@ -5,6 +5,7 @@
         font-family: $montserrat
         font-size: 20px
         font-weight: 600
+        // font-size: 0
         +vcenter
         +sm 
             display: inline-block
@@ -18,7 +19,6 @@
         span
             display: inline-block   
             vertical-align: middle
-            
     &_colored
         padding-bottom: 47px
         +sm 
@@ -42,6 +42,8 @@
     width: 100vw
     max-width: none
     z-index: 5
+    +sm
+        padding-bottom: 0
     &__bg
         position: absolute
         left: 0
@@ -60,7 +62,7 @@
             width: 100%
     &__left
         +sm
-            height: 50%
+            height: 38%
     &__form
         float: right
         margin-top: 16px
@@ -85,7 +87,7 @@
     &__content
         padding: 166px 0 156px
         +sm
-            padding: 71px 0 70px
+            padding: 71px 0 50px
     &__svg
         height: 100%
         svg
