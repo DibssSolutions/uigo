@@ -13,3 +13,7 @@ PageList:
   ready: 100
 - file: development.html
   ready: 100
+- file: e-commerce.html
+  ready: 100
+- file: uxui.html
+  ready: 100

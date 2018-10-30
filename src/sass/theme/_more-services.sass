@@ -4,12 +4,18 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
+		+xs
+			flex-direction: column
+			justify-content: center
 	&__left
 		font-family: $montserrat
 		font-weight: 300
 		font-size: 20px
 		letter-spacing: 0.6px
 		color: $title-dark
+	&__right
+		+xs
+			margin-top: 20px
 
 .servisec-item
 	position: relative

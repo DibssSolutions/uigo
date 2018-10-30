@@ -15,12 +15,25 @@
         margin-left: 10px
     &__logo
         +sm 
-            display: none
+            padding: 14px 0
+            // text-align: center
     &_theme
         .navigation__list
-            padding-left: 44px
+            justify-self: center
+            margin: 0 -44px 0 0
+            +sm 
+                margin: 0
         .navigation__link
             padding: 33px 18px
+            +sm 
+                padding: 18px 0
+        .navigation__btn
+            font-weight: 400
+            +sm 
+                margin-top: 10px
+        +sm     
+            border-top: 1px solid rgba(#979797, 0.3) 
+
         
     
 

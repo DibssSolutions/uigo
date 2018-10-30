@@ -14,7 +14,7 @@
 	})}}
 
     {{ navigation.themeNav({title: 'BRANDING'}) }}
-    
+
     {{ what.build({
         title: 'WHAT WE DO',
         subtitle: 'We create and innovate to build impactful brand experiences that connect with customers', 
@@ -60,31 +60,33 @@
         ] 
     }) }}
 
-	{% include 'partials/components/_how.html' %}
+    {% include 'partials/components/_how.html' %}
 
-	{% include 'partials/components/_we-create.html' %}
-	
-	{% include 'partials/components/_who.html' %}
-	{% include 'partials/components/_got-a.html' %}
+    <div class="we-create">
+        <div class="we-create__rect theme-bg"></div>
+        <div class="we-create__text" style="background-image: url(../img/how-branding.jpg)">we create.</div>
+    </div>
 
-	<div class="more-services">
-		<div class="inner">
-			<div class="more-services__content">
-				<div class="more-services__left">
-					more services
-				</div>
-				<div class="more-services__right">
-					<div class="servisec-item">e-Commerce</div>
-					<a href="#" class="btn-text btn-text_yellow btn-text_sm">VIEW MORE 
-						<svg class="icon icon-arrow-right ">
-							<use xlink:href="img/sprite.svg#icon-arrow-right"></use>
-						</svg>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	{% include 'partials/components/_footer.html' %}
+    {% include 'partials/components/_who.html' %}
+    {{idea.got({text: 'branding/identity project or idea?' })}}
 
+    <div class="more-services">
+        <div class="inner">
+            <div class="more-services__content">
+                <div class="more-services__left">
+                    more services
+                </div>
+                <div class="more-services__right">
+                    <div class="servisec-item">e-Commerce</div>
+                    <a href="#" class="btn-text btn-text_yellow btn-text_sm">VIEW MORE
+                        <svg class="icon icon-arrow-right ">
+                            <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% include 'partials/components/_footer.html' %}
 
 {% endblock %}
