@@ -9,11 +9,11 @@
             </p>
             <div class="what__row">
                 {% for col in props.cols %}
-                    <div class="what__col">
-                        <div class="what__img-wrapper">
-                            <img src="img/{{col.img.src}}" alt="{{col.img.alt}}" class="what__image{% if col.img.modifier %} what__image_{{col.img.modifier}}{% endif %}"/>
+                    <div class="card{% if col.modifier %} card_{{col.modifier}}{% endif %}">
+                        <div class="card__img-wrapper">
+                            <img src="img/{{col.img.src}}" alt="{{col.img.alt}}" class="card__image"/>
                         </div>
-                        <div class="what__brand">
+                        <div class="card__brand">
                             <img src="img/logos/{{col.brand.src}}" alt="{{col.brand.alt}}"/>
                         </div>
                     </div>

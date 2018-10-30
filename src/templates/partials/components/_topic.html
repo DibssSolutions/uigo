@@ -5,7 +5,7 @@
                 <div class="topic__text-wrap">
                     <h5 class="topic__label title">WE {{props.label}}</h5>
                     <h2 class="topic__title theme-color">{{props.title}}</h2>
-                    <div class="topic__descr">{{props.descr}}</div>
+                    <div class="topic__descr">{{props.descr | safe}}</div>
                     <div class="topic__btn">
                         <button class="btn btn_lg btn_black btn_no-border btn_topic theme-bg">{{props.btnText or 'Contact Us'}}</button>
                     </div>

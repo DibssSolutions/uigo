@@ -1,11 +1,21 @@
 .header
-    margin-bottom: 100px
-    text-align: center
-    padding-bottom: 47px
-    .logo
-        float: left
     &__title
         text-transform: uppercase
         color: $limedSpruce
         display: inline-block
+        font-family: $montserrat
+        font-size: 20px
+        font-weight: 600
+        +vcenter
+        +sm 
+            font-size: 16px
+            
+    &_colored
+        padding-bottom: 47px
+        +sm 
+            padding-bottom: 20px
+        .logo
+            float: left
+        .logo__icon
+            fill: $limedSpruce
 
