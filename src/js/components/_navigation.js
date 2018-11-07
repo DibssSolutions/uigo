@@ -1,4 +1,4 @@
-import {OPEN, ACTIVE, BODY} from '../_constants';
+import {OPEN, ACTIVE, BODY, WIN } from '../_constants';
 
 const trigger = $('.js-navigation-current');
 const navigation = $('.js-navigation-out');
@@ -21,3 +21,5 @@ BODY.on('click', e => {
   if ($(e.target).closest(navigation).length || !navigation.hasClass(OPEN)) return;
   navigation.removeClass(OPEN);
 });
+
+

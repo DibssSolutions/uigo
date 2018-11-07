@@ -4,3 +4,6 @@ import './_onScreen';
 import './_navigation';
 import './_paralax';
 import './_simplyscrollInit';
+import './_sticky';
+import './_scrollspy';
+import './_scrollTo';

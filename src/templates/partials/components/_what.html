@@ -1,5 +1,5 @@
 {% macro build(props) %}
-    <div class="what">
+    <section class="what js-what js-scrollspy-section js-default-scrollspy" id="What">
         <div class="what__inner inner" data-anim-parent>
             <h3 class="what__title title" data-anim-from="bottom">
                 {{props.title}}
@@ -20,5 +20,5 @@
                 {% endfor %}
             </div>
         </div>
-    </div>
+    </section>
 {% endmacro %}
