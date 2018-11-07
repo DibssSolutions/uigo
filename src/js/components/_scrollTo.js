@@ -11,7 +11,7 @@ $(function() {
       if (target.length) {
         $('html, body').animate(
           {
-            scrollTop: target.offset().top - navHeight 
+            scrollTop: target.offset().top - navHeight + 1
           },
           1000
         );

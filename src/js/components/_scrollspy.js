@@ -11,7 +11,7 @@ const navigation = $('.js-navigation-out');
 WIN.on('scroll', () => scrollSpy());
 
 var scrollSpy = () => {
-  let fromTop = WIN.scrollTop() + navHeight + 1;
+  let fromTop = WIN.scrollTop() + navHeight;
   $(navLinks).each((index, link) => {
     let section = $(link.hash);
     let firstSection = $('.js-default-scrollspy');
@@ -26,15 +26,13 @@ var scrollSpy = () => {
       triggerText = $(link).text();
     }
 
-    if (
-      firstSection.offset().top > fromTop &&
-      section.offset().top + section.outerHeight() < fromTop
-    ) {
+    if (firstSection.offset().top > fromTop) {
       $(link)
         .closest(firstSection)
         .addClass(ACTIVE);
     } else if (
-      lastSection.offset().top + section.outerHeight() <= fromTop
+      lastSection.offset().top + lastSection.outerHeight() <=
+      fromTop
     ) {
       $(link)
         .closest(lastSection)

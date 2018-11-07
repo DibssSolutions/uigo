@@ -15,7 +15,7 @@
             width: calc(100% - 84px - 35px)
             text-align: center
         +xs 
-            font-size: 14px
+            font-size: 10px
             
         span
             display: inline-block   
@@ -66,7 +66,7 @@
             width: 100%
     &__left
         +sm
-            height: 38%
+            display: none
     &__form
         float: right
         margin-top: 16px
@@ -81,13 +81,27 @@
     .got-a
         padding: 0
         margin: 0
+        +sm
+            z-index: 1
+        &__text
+            max-width: none
     &__got-a
         float: left
         text-align: left
         max-width: 400px
         +sm
             max-width: 100%
-            margin-top: 20px
+            width: 100%
+        &-bg
+            position: absolute
+            left: -15px
+            right: -15px
+            top: -15px
+            bottom: -50px
+            display: none
+            z-index: -1
+            +sm
+                display: block
     &__content
         padding: 166px 0 156px
         +sm
