@@ -140,7 +140,7 @@
           </div>
         </div>
       </section>
-      <div class="navigation navigation_theme">
+      <div class="navigation navigation_theme js-navigation">
         <div class="navigation__inner inner">
           <div class="navigation__out js-navigation-out">
             <div class="navigation__current js-navigation-current"> <span class="js-navigation-current-text"></span> <svg class="icon icon-arrow-right "><use xlink:href="img/sprite.svg#icon-arrow-right"></use></svg> </div>
@@ -149,14 +149,14 @@
                             SOFTWARE DEVELOPMENT
                         </span> </div>
               <ul class="navigation__list">
-                <li class="navigation__item is-active"> <a class="navigation__link theme-pseudo" href="#What">What</a> </li>
-                <li class="navigation__item"> <a class="navigation__link theme-pseudo" href="#How">How</a> </li>
-                <li class="navigation__item"> <a class="navigation__link theme-pseudo" href="#Who">Who</a> </li>
+                <li class="navigation__item js-nav-item is-active"> <a class="navigation__link theme-pseudo js-nav-link" href="#What">What</a> </li>
+                <li class="navigation__item js-nav-item"> <a class="navigation__link theme-pseudo js-nav-link" href="#How">How</a> </li>
+                <li class="navigation__item js-nav-item"> <a class="navigation__link theme-pseudo js-nav-link" href="#Who">Who</a> </li>
               </ul> <button class="navigation__btn btn btn_black btn_no-border btn_middle theme-bg js-nav-contacts">Contact Us</button> </div>
           </div>
         </div>
       </div>
-      <div class="what">
+      <section class="what js-what js-scrollspy-section js-default-scrollspy" id="What">
         <div class="what__inner inner" data-anim-parent>
           <h3 class="what__title title" data-anim-from="bottom"> WHAT WE DO </h3>
           <p class="what__descr subtitle" data-anim-from="bottom"> We are a team of code-crushing Laravel experts building complex and well-architected products </p>
@@ -175,8 +175,8 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="how" data-anim-parent>
+      </section>
+      <section class="how js-scrollspy-section" data-anim-parent id="How">
         <div class="how__inner inner">
           <div class="how__content">
             <div class="how__text" data-anim-from="bottom">
@@ -217,12 +217,12 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="we-create">
+      </section>
+      <div class="we-create js-create">
         <div class="we-create__rect theme-bg"></div>
         <div class="we-create__text" style="background-image: url(../img/how-sq-software.jpg)">we code.</div>
       </div>
-      <div class="who" data-anim-parent>
+      <section class="who js-scrollspy-section js-last-scrollspy" data-anim-parent id="Who">
         <div class="who__inner inner">
           <h3 class="who__title title" data-anim-from="bottom">who we are</h3>
           <div class="who__subtitle subtitle" data-anim-from="bottom">A wicked awesome Software & Design Studio</div>
@@ -318,7 +318,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <div class="got-a">
         <div class="got-a__inner inner">
           <h3 class="got-a__title title">got a</h3>
